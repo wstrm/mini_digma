@@ -18,12 +18,12 @@ Attribute ÖppnaFOR.VB_ProcData.VB_Invoke_Func = " \n14"
     'On Error GoTo Errmsg
     
  'Göm fönster
-    'Application.ScreenUpdating = False
-    'Application.DisplayStatusBar = False
-    'Application.Calculation = xlCalculationManual
-    'Application.EnableEvents = False
-    'ActiveSheet.DisplayPageBreaks = False
-    'ActiveSheet.AutoFilterMode = False
+    Application.ScreenUpdating = False
+    Application.DisplayStatusBar = False
+    Application.Calculation = xlCalculationManual
+    Application.EnableEvents = False
+    ActiveSheet.DisplayPageBreaks = False
+    ActiveSheet.AutoFilterMode = False
     
 'Radera gamla blad, ifall de finns kvar av någon anledning
     On Error Resume Next
@@ -44,8 +44,17 @@ Attribute ÖppnaFOR.VB_ProcData.VB_Invoke_Func = " \n14"
     Set sheetFOR = Sheets(".FOR")
     Set sheetBAK = Sheets(".BAK")
     Set sheetMERGE = Sheets("KONVERTERA")
+    Set sheetARTIKEL = Sheets("ARTIKELREG")
+    Set sheetTEMP = Sheets("TEMP")
     filFOR = "L:\AM\PRO\" & DIGMATEST.FORfil.Text & ".FOR"
     filBAK = "L:\AM\PRO\BAK\" & DIGMATEST.FORfil.Text & ".BAK"
+    
+'Göm blad
+    sheetFOR.Visible = True
+    sheetBAK.Visible = True
+    sheetMERGE.Visible = True
+    sheetARTIKEL.Visible = True
+    sheetTEMP.Visible = True
     
 'Leta efter .FOR-fil i L:\AM\PRO för att sedan öppna den och förbereder den för Excel.
     sheetFOR.Select
@@ -226,7 +235,7 @@ With ActiveSheet.QueryTables.Add(Connection:="TEXT;" & filBAK, _
     With RE
         .Global = True
         'Tillåt "," och alla nummer mellan 0-9
-       .Pattern = "[^.,0-9]"
+       .Pattern = "[^,0-9]"
        For Each rng In Selection
             rng.Value = .Replace(rng.Value, "")
         Next rng
@@ -243,7 +252,7 @@ With ActiveSheet.QueryTables.Add(Connection:="TEXT;" & filBAK, _
     'Radera alla ogiltiga artiklar (alla artiklar utan ett rad nummer.)
     sheetFOR.Activate
     On Error Resume Next
-    Range(("H30"), ("H" & ActiveSheet.UsedRange.Rows.Count)).SpecialCells(xlCellTypeBlanks).EntireRow.Delete
+    Range(("G31"), ("G" & ActiveSheet.UsedRange.Rows.Count)).SpecialCells(xlCellTypeBlanks).EntireRow.Delete
 
     'Slut
     'On Error GoTo Errmsg2
@@ -273,7 +282,7 @@ Sub RWartikel_Sök()
     Dim rngC As Range
     Dim strToFind As String, FirstAddress As String, FirstRow As String, xCellRow As String, artNr As String
     Dim rngtest As String
-    Dim selRng, xCell As Range
+    Dim selRng, xCell, rngFind As Range
     Set sheetFOR = Sheets(".FOR")
     Set sheetBAK = Sheets(".BAK")
     Set sheetMERGE = Sheets("KONVERTERA")
@@ -284,7 +293,7 @@ Sub RWartikel_Sök()
     
     sheetFOR.Activate
     With ActiveSheet
-    Range(.Range("E30"), ("F" & .UsedRange.Rows.Count)).Select
+    Range(.Range("E30"), ("E" & .UsedRange.Rows.Count)).Select
     Set selRng = Selection
     End With
     
@@ -317,6 +326,7 @@ Sub RWartikel_Sök()
     sheetTEMP.Activate
     Range("C1").Value = Range("C1").Value + 1
     Range("A" & (Range("C1").Value), ("B" & (Range("C1").Value))).PasteSpecial
+    
     Next xCell
     
     'On Error GoTo Errmsg2
@@ -358,10 +368,6 @@ Sub RWartikel_Sök()
     
     End With
     
-    'Stäng RWartikel
-    'Windows("RWartikel.xls").Activate
-    'ActiveWindow.Close False
-    
     Application.DisplayAlerts = False
     'Sheets("TEMP").Delete
     'Sheets(".FOR").Delete
@@ -374,10 +380,12 @@ Sub RWartikel_Sök()
     
     MsgBox ("Klar")
     
+    Call Konvertera_DIGMA
+    
     Exit Sub
     
 Errmsg:
-   MsgBox ("Misslyckades att hitta resurser i 'RWartikel.xls', se till att den finns."), vbOKOnly, ".FOR-fil"
+   MsgBox ("Misslyckades att hitta resurser i 'RWartikel', se till att den finns."), vbOKOnly, ".FOR-fil"
    Application.ScreenUpdating = True
    Exit Sub
     
@@ -387,6 +395,56 @@ Errmsg2:
    Exit Sub
    
 Errmsg3:
-   MsgBox ("Misslyckades att radera 'temp', den kanske redan blivit raderad?"), vbOKOnly, ".FOR-fil"
+   MsgBox ("Misslyckades att radera temporära blad, dem kanske redan blivit raderade?"), vbOKOnly, ".FOR-fil"
    Application.ScreenUpdating = True
+End Sub
+
+Sub Konvertera_DIGMA()
+    On Error GoTo 0
+    
+    'Bestäm variabler
+    Dim selRange As String
+    Set sheetFOR = Sheets(".FOR")
+    Set sheetBAK = Sheets(".BAK")
+    Set sheetMERGE = Sheets("KONVERTERA")
+    Set sheetARTIKEL = Sheets("ARTIKELREG")
+    Set sheetTEMP = Sheets("TEMP")
+    
+    'ffdg
+    With sheetMERGE
+        .[A1].FormulaR1C1 = "ItemNo"
+        .[B1].FormulaR1C1 = "Ordernummer"
+        .[C1].FormulaR1C1 = "Art.nr."
+        .[D1].FormulaR1C1 = "Antal"
+        .[E1].FormulaR1C1 = "Benämning"
+        .[F1].FormulaR1C1 = "Material"
+        .[G1].FormulaR1C1 = "Längd"
+        .[H1].FormulaR1C1 = "Bredd"
+        .[I1].FormulaR1C1 = "Tj."
+        .[J1].FormulaR1C1 = "Anm.2"
+        .[K1].FormulaR1C1 = "klippm.höjd"
+        .[L1].FormulaR1C1 = "Klippm.br1."
+        .[M1].FormulaR1C1 = "Klippm.br2."
+        .[N1].FormulaR1C1 = "resurs"
+        .[O1].FormulaR1C1 = "Konstruktör"
+    End With
+    
+    'Definiera range
+    sheetFOR.Activate
+    With ActiveSheet
+    Range(.Range("A31"), ("A" & .UsedRange.Rows.Count)).Select
+    selRange = Selection.Row + Selection.Rows.Count - 1
+    End With
+    
+    sheetFOR.Range("G31:G" & selRange).Copy Destination:=sheetMERGE.Range("A2")
+    sheetFOR.Range("J31:J" & selRange).Copy Destination:=sheetMERGE.Range("C2")
+    sheetFOR.Range("A31:A" & selRange).Copy Destination:=sheetMERGE.Range("D2")
+    sheetFOR.Range("H31:H" & selRange).Copy Destination:=sheetMERGE.Range("E2")
+    sheetFOR.Range("F31:F" & selRange).Copy Destination:=sheetMERGE.Range("F2")
+    sheetFOR.Range("B31:B" & selRange).Copy Destination:=sheetMERGE.Range("G2")
+    sheetFOR.Range("C31:C" & selRange).Copy Destination:=sheetMERGE.Range("H2")
+    sheetFOR.Range("D31:D" & selRange).Copy Destination:=sheetMERGE.Range("I2")
+    sheetFOR.Range("F31:F" & selRange).Copy Destination:=sheetMERGE.Range("J2")
+    sheetFOR.Range("I31:I" & selRange).Copy Destination:=sheetMERGE.Range("N2")
+   
 End Sub
