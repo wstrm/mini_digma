@@ -1,4 +1,4 @@
-mini_digma28
+﻿mini_digma
 ============
 
 Upgrading of Åhmans i Åhus order printing system
