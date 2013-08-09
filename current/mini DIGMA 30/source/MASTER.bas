@@ -1,69 +1,18 @@
 Attribute VB_Name = "MASTER"
 Option Explicit
-Dim ordfil, a, gg
-Dim tx, kat, ggg, hlogfil As String
-Dim x, y, z, xa, xb, xc, xd, xe, xf, xg, xh, xi, xj As Integer
-Dim twx, twz, ton, twy, tut As Object
-Sub aett(): Application.GoTo Reference:=Range("A1"), scroll:=True: End Sub
-Sub CurrDirr(): ActiveCell.Value = CurDir: End Sub
-Attribute CurrDirr.VB_ProcData.VB_Invoke_Func = "u\n14"
-Sub off(): Application.ScreenUpdating = False: End Sub
-Sub sc(): a = Range("AF65536").End(xlUp).Row: End Sub
-Sub ok(): Åtgärder: End Sub
-Sub dölj(): On Error Resume Next: Workbooks(gg).Visible = False: On Error GoTo 0: End Sub
-Sub kolbredd(): Columns("J:AU").Select: Selection.Columns.AutoFit: aett: End Sub
-Sub hemsökväg(): Settings: ChDrive twy.Range("Hemenhet").Value: ChDir twy.Range("Hemkatalog").Value: End Sub
-Sub bly(): Settings: twy.Visible = True: twy.Activate: aett: End Sub
-Sub blynda(): Settings: twy.Visible = False: End Sub
-Sub avbryt(): aa: bb: End Sub
-Sub svgar(): Settings: ChDrive twy.Range("Hemenhet").Value: ChDir twy.Range("Orderkat").Value: End Sub
-Sub auto_open()
-    Settings
-    ''hemsökväg
-    ''twz.Range("tonutid").Value = twz.Range("nutid").Value
-   '' kat = "Gamla_Digma_Makron":
-   '' open_or_make_dir kat
-    ''ThisWorkbook.SaveAs Filename:=twz.Range("tonutid").Value & "xls"
-    ''hemsökväg
-    'CreateMenu
-    'Sheets("m").Visible = False
-    Sheets("z").Visible = False
-    'Sheets("x").Visible = True
-    'Sheets("x").Protect password:="ki"
-    aett
-    'Start
+Dim OrdFil, OrderDir, OrdNum As String
+Dim X, Y, Z, xa, xb, xc, xd, xe, xf, xg, xh, xi, xj As Integer
+Dim TWX, TWZ, TUT As Object
+
+    'DriveLetter = Left(miniDIGMAForm.OrderPath_Text.Text, 1)
+    'ChDrive DriveLetter
+    'ChDir twy.Range("Hemkatalog").Value
+Public Sub Auto_Open()
+    Application.ScreenUpdating = False
+    Application.Goto Reference:=Range("A1"), scroll:=True
 End Sub
-Sub wbclose()
-    y = Workbooks.Count
-    For x = y To 1 Step -1
-        Workbooks(x).Activate
-        If Workbooks(x).Name <> ThisWorkbook.Name Then
-            Workbooks(x).Close savechanges:=True
-        End If
-    Next
-End Sub
-Sub orderlängd()
-    Settings
-    If Len(ton.Value) <> 5 Then
-        MsgBox "OrderNr ska ha 5 siffror"
-        twx.Activate
-        ton.Select
-        End
-    End If
-End Sub
-Sub orderkat()
-    orderlängd
-    svgar
-    tx = ton.Value    'string
-    tx = Right(Str(tx), 5)
-    a = Dir(tx, 16)
-    If Len(a) = 0 Then
-        MsgBox "Önskad order saknar ännu egen katalog"
-        End
-    End If
-    ChDir a
-End Sub
-Sub Åtgärder()
+
+Sub runMiniDIGMA()
 Dim vntKapLista As Variant
 Dim vntLager As Variant
 Dim vntKlippLista As Variant
@@ -71,31 +20,27 @@ Dim vntPlatLager As Variant
 Dim intEndRow As Integer
 Dim intStartRow As Integer
 Dim vntLabelData As Variant
+Set TWX = ThisWorkbook.Sheets("x")
+Set TUT = ThisWorkbook.Sheets("Utskrift")
+OrdNum = miniDIGMAForm.OrderNummer_Text.Value
 
-
-
-    Settings
-    With twz
-        If .Range("opfil").Value = True Then GoTo kör    '1
-        'If .Range("sort").Value = True Then GoTo kör    '2
-        If .Range("skrivut").Value = True Then GoTo kör    '3
+    With TWZ
+        If miniDIGMAForm.OpenLoad_Check.Value = True Then GoTo kör    '1
+        If miniDIGMAForm.PrintList_Check.Value = True Then GoTo kör    '3
         MsgBox "Du har inte valt någon åtgärd"
         End
 kör:
-        If .Range("opfil").Value = True Then
-            Call orderlängd
-            orderkat
-            twx.Range("M:M").ClearContents
-            off
-            opord
-            .Range("opfil").Value = False
-            urv
-            Sheets("Meny").Activate
-            If .Range("skrivut").Value = True Then GoTo GåVidare
+        If miniDIGMAForm.OpenLoad_Check.Value = True Then
+            TWX.Range("M:M").ClearContents
+            Application.ScreenUpdating = False
+            
+            OpOrd
+            Call SortByNumber
+            If miniDIGMAForm.PrintList_Check.Value = True Then GoTo GåVidare
             End
         End If
 GåVidare:
-        If .Range("skrivut").Value = True Then
+        If miniDIGMAForm.PrintList_Check.Value = True Then
            koptillutskrift
            
            'Sortera KapLista           intEndRow = 9
@@ -117,7 +62,7 @@ GåVidare:
                 
                 Call ChangeNr(1)
                 'Hämta data till Etikettblad
-                vntLabelData = mdlCreateLabels.GetLabelData(Blad2.Range("OrderNr"), 5, 1, 10, 7, 8, 9, intStartRow, intEndRow - 1)
+                vntLabelData = mdlCreateLabels.GetLabelData(OrdNum, 5, 1, 10, 7, 8, 9, intStartRow, intEndRow - 1)
                 'Skriv till Etikettblad
                 Call mdlCreateLabels.InsertLabelData(vntLabelData, wsKaplista)
                 
@@ -141,7 +86,7 @@ GåVidare:
                 
                 Call ChangeNr(1)
                 'Hämta data till Etikettblad
-                vntLabelData = mdlCreateLabels.GetLabelData(Blad2.Range("OrderNr"), 5, 1, 10, 7, 8, 9, intStartRow, intEndRow - 1)
+                vntLabelData = mdlCreateLabels.GetLabelData(OrdNum, 5, 1, 10, 7, 8, 9, intStartRow, intEndRow - 1)
                 'Skriv till Etikettblad
                 Call mdlCreateLabels.InsertLabelData(vntLabelData, wsLager)
                 
@@ -165,7 +110,7 @@ GåVidare:
                 
                 Call ChangeNr(14)
                 'Hämta data till Etikettblad
-                vntLabelData = mdlCreateLabels.GetLabelData(Blad2.Range("OrderNr"), 18, 14, 24, 25, 26, 23, intStartRow, intEndRow - 1)
+                vntLabelData = mdlCreateLabels.GetLabelData(OrdNum, 18, 14, 24, 25, 26, 23, intStartRow, intEndRow - 1)
                 'Skriv till Etikettblad
                 Call mdlCreateLabels.InsertLabelData(vntLabelData, wsKlipplista)
 
@@ -189,7 +134,7 @@ GåVidare:
                     
                 Call ChangeNr(14)
                 'Hämta data till Etikettblad
-                vntLabelData = mdlCreateLabels.GetLabelData(Blad2.Range("OrderNr"), 18, 14, 24, 25, 26, 23, intStartRow, intEndRow - 1)
+                vntLabelData = mdlCreateLabels.GetLabelData(OrdNum, 18, 14, 24, 25, 26, 23, intStartRow, intEndRow - 1)
                 'Skriv till Etikettblad
                 Call mdlCreateLabels.InsertLabelData(vntLabelData, wsPlatlager)
                 End If
@@ -207,7 +152,7 @@ GåVidare:
             
             Blad5.Range(Cells(9, 23), Cells(100, 23)).NumberFormat = "@"
             Blad5.Range(Cells(9, 9), Cells(100, 9)).NumberFormat = "@"
-            End
+            miniDIGMAForm.Status_Label.Caption = "Klar"
         End If
     End With
     
@@ -288,49 +233,22 @@ Public Sub CreateShortWord2(ByVal intCol1 As Integer, ByVal intCol12 As Integer)
 
 End Sub
 
-Sub opord()
-    Settings
-    twx.Unprotect Password:="ki"
-'GoTo hoski
-    twx.Range("j:BB").ClearContents
-    Workbooks.Open Filename:=ThisWorkbook.Sheets("x").Range("OrderNr") & ".xls"
-    ordfil = ActiveWorkbook.Name
+Sub OpOrd()
+    TWX.Unprotect Password:="ki"
+    TWX.Range("j:BB").ClearContents
+    OrderDir = miniDIGMAForm.OrderPath_Text.Text
+    OrdFil = miniDIGMAForm.OrderNummer_Text.Value
+    Workbooks.Open Filename:=OrderDir & "\" & OrdFil & "\" & OrdFil & ".xls"
     Columns("A:n").Copy
     ThisWorkbook.Activate
     Sheets("x").Activate
     Range("alfa").Select
     Selection.PasteSpecial Paste:=xlValues: Application.CutCopyMode = False
-    Workbooks(ordfil).Close savechanges:=False
-hoski:
+    Workbooks(OrdFil & ".xls").Close SaveChanges:=False
     Columns("k:x").Copy Range("ae1")
-   ' Sheets("x").Protect password:="ki"
 End Sub
-Sub logg()
-    orderlängd
-    ggg = ThisWorkbook.Sheets("x").Range("OrderNr") & "_logg.xls"
-igen:
-    orderkat
-    a = Dir(ggg)
-    If Len(a) = 0 Then GoTo skapag
-    GoTo opgg
-skapag:
-    skapagg ggg
-opgg:
-End Sub
-Sub skapagg(ggg)
-    Workbooks.Add
-    y = ActiveWorkbook.Sheets.Count
-    For x = 2 To y
-        Sheets(2).Select
-        Application.DisplayAlerts = False
-        ActiveWindow.SelectedSheets.Delete
-        Application.DisplayAlerts = True
-    Next
-    ActiveWorkbook.Sheets(1).Range("A2").ColumnWidth = 111
-    ActiveWorkbook.SaveAs Filename:=ggg
-    Workbooks(ggg).Close savechanges:=False
-End Sub
-Sub urv()
+
+Sub SortByNumber()
     With ThisWorkbook
         With Sheets("x")
             .Unprotect Password:="ki"
@@ -338,43 +256,11 @@ Sub urv()
                 Selection.Sort Key1:=Range("ar2"), Order1:=xlAscending, Header:=xlNo, OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom
                 Columns("AE:ar").Copy Range("k1")
                 Range("K2:AB55555").Select
-           ' Selection.Rows.AutoFit
             .Protect Password:="ki"
         End With
     End With
 End Sub
-Sub Settings()
-    off
-    Set twz = ThisWorkbook.Sheets("z")
-    Set twx = ThisWorkbook.Sheets("x")
-    Set twy = ThisWorkbook.Sheets("y")
-    Set tut = ThisWorkbook.Sheets("Utskrift")
-    Set ton = twx.Range("OrderNr")
-End Sub
 
-Sub open_or_make_dir(kat)
-    gg = CurDir
-    a = Dir(kat, 16)
-    If Len(a) = 0 Then
-        MkDir kat
-    End If
-    ChDir gg
-    ChDir kat
-End Sub
-Sub kolvidd()
-    Rows("1:1").WrapText = True
-    Rows("1:1").RowHeight = 30
-    Columns("K:K").ColumnWidth = 4
-    Columns("L:L").ColumnWidth = 9
-    Columns("L:L").ColumnWidth = 7
-    Columns("M:t").EntireColumn.AutoFit
-    Columns("n:n").ColumnWidth = 2.57
-    Columns("U:U").ColumnWidth = 7.33
-    Columns("V:V").ColumnWidth = 6.78
-    Columns("W:W").ColumnWidth = 7
-    Columns("X:AB").ColumnWidth = 2
-    Columns("AD:CD").EntireColumn.AutoFit
-End Sub
 Sub CreateMenu()
 '   This sub should be executed when the workbook is opened.
 '   NOTE: There is no error handling in this subroutine
@@ -463,8 +349,7 @@ Sub uslo(Caption)
     Next
 End Sub
 Sub koptillutskrift()
-    Settings
-    tut.Unprotect Password:="ki": Range(tut.Cells(9, 1), tut.Cells(333, 33)).Clear: twx.Activate
+    TUT.Unprotect Password:="ki": Range(TUT.Cells(9, 1), TUT.Cells(333, 13)).Clear: Range(TUT.Cells(10, 14), TUT.Cells(333, 33)).Clear: TWX.Activate
     '-------------------------------------------------------------------------sid 1
     If Range("msk").Offset(0, 1).Value = 1 Then
         xa = 2    'msk börjar på rad 2
@@ -489,70 +374,69 @@ Sub koptillutskrift()
     xi = Range("ömått").Offset(0, 2).Value    'ömått = sista raden
     '--------------------------------------------------------------------------
     'RW tillägg-------------------------------
-    Sheets("Utskrift").Select
-    Range("A7:M8").Select
-    Selection.Copy
-    Range("N7").Select
-    ActiveSheet.Paste
+    'Sheets("Utskrift").Select
+    'Range("A8:M8").Select
+    'Selection.Copy
+    'Range("N8").Select
+    'ActiveSheet.Paste
     '---------------------------------------------
     '------------------------------------------------------------------------sid 1 börjar
     If Range("msk").Offset(0, 1).Value = 1 Then
-        Range(twx.Cells(xa, 11), twx.Cells(xa + xb - 1, 23)).Copy tut.Cells(9, 1)    'msk
+        Range(TWX.Cells(xa, 11), TWX.Cells(xa + xb - 1, 23)).Copy TUT.Cells(9, 1)    'msk
     End If
 
     If Range("msklag").Offset(0, 1).Value = 1 Then
-        Range(tut.Cells(4, 1), tut.Cells(8, 10)).Copy tut.Cells(9 + xb + 1, 1)
-        tut.Cells(9 + xb + 2, 5).Value = "LAGER"
-        Range(twx.Cells(xc, 11), twx.Cells(xc + xd - 1, 23)).Copy tut.Cells(xc + xa + 11, 1)    'msklag
+        Range(TUT.Cells(7, 1), TUT.Cells(8, 10)).Copy TUT.Cells(9 + xb + 1, 1)
+        TUT.Cells(9 + xb + 1, 5).Value = "LAGER"
+        Range(TWX.Cells(xc, 11), TWX.Cells(xc + xd - 1, 23)).Copy TUT.Cells(xc + xa + 8, 1)    'msklag
     Else
-        Range(tut.Cells(4, 1), tut.Cells(8, 10)).Copy tut.Cells(9 + xb + 1, 1)
-        tut.Cells(9 + xb + 2, 5).Value = "LAGER"
+        Range(TUT.Cells(7, 1), TUT.Cells(8, 10)).Copy TUT.Cells(9 + xb + 1, 1)
+        TUT.Cells(9 + xb + 1, 5).Value = "LAGER"
     End If
     '-------------------------------------------------------------------sid 1 slut
 
     '-------------------------------------------------------------------sid 2 börjar
     If Range("plåt").Offset(0, 1).Value = 1 Then
-        Range(twx.Cells(xe, 11), twx.Cells(xe + xf - 1, 23)).Copy tut.Cells(9, 14)    'plåt
+        Range(TWX.Cells(xe, 11), TWX.Cells(xe + xf - 1, 23)).Copy TUT.Cells(10, 14)    'plåt
     End If
 
     If Range("plåtlag").Offset(0, 1).Value = 1 Then
-        Range(tut.Cells(4, 14), tut.Cells(8, 26)).Copy tut.Cells(9 + xf + 1, 14)
-        tut.Cells(9 + xf + 2, 18).Value = "PLÅTLAGER"
-        Range(twx.Cells(xg, 11), twx.Cells(xg + xh - 1, 23)).Copy tut.Cells(9 + xf + 6, 14)    'plåtlag
+        Range(TUT.Cells(7, 14), TUT.Cells(9, 26)).Copy TUT.Cells(10 + xf + 1, 14)
+        TUT.Cells(10 + xf + 1, 18).Value = "PLÅTLAGER"
+        Range(TWX.Cells(xg, 11), TWX.Cells(xg + xh - 1, 23)).Copy TUT.Cells(10 + xf + 4, 14)    'plåtlag
     Else
-        Range(tut.Cells(4, 14), tut.Cells(8, 26)).Copy tut.Cells(9 + xf + 1, 14)
-        tut.Cells(9 + xf + 2, 18).Value = "PLÅTLAGER"
+        Range(TUT.Cells(7, 14), TUT.Cells(9, 26)).Copy TUT.Cells(10 + xf + 1, 14)
+        TUT.Cells(10 + xf + 1, 18).Value = "PLÅTLAGER"
     End If
     '-------------------------------------------------------------------sid 2 slut
     'RW tillägg-------------------------------
+    Sheets("Utskrift").Select
     Columns("X:Z").Select
     Selection.NumberFormat = "0" ' tar bort decimaler på klippmått
-    Application.CutCopyMode = False
-    Selection.Cut
-    Columns("T:T").Select
-    Selection.Insert Shift:=xlToRight
-    Columns("W:X").Select
-    Selection.Cut
-    Columns("AA:AA").Select
-    Selection.Insert Shift:=xlToRight
-    Columns("T:T").ColumnWidth = 7
-    Columns("U:U").ColumnWidth = 7
-    Columns("V:V").ColumnWidth = 7
-    Columns("W:W").ColumnWidth = 3.5
-    Columns("X:X").ColumnWidth = 18
-    Columns("Y:Y").ColumnWidth = 7
-    Columns("Z:Z").ColumnWidth = 7
+    'Application.CutCopyMode = False
+    'Selection.Cut
+    'Columns("T:T").Select
+    'Selection.Insert Shift:=xlToRight
+    'Columns("W:X").Select
+    'Selection.Cut
+    'Columns("AA:AA").Select
+    ''Selection.Insert Shift:=xlToRight
+    'Columns("T:T").ColumnWidth = 7
+    'Columns("U:U").ColumnWidth = 7
+    'Columns("V:V").ColumnWidth = 7
+    'Columns("W:W").ColumnWidth = 3.5
+    'Columns("X:X").ColumnWidth = 18
+    'Columns("Y:Y").ColumnWidth = 7
+    'Columns("Z:Z").ColumnWidth = 7
 
     '---------------------------------------------
 
-    tut.Activate
+    TUT.Activate
     Application.EnableEvents = True
     ActiveSheet.DisplayPageBreaks = True
     Application.ScreenUpdating = True
     Application.DisplayStatusBar = True
-    'tut.Protect password:="ki"
-    aett
-    'ActiveSheet.PrintOut
+    Application.Goto Reference:=Range("A1"), scroll:=True
 End Sub
 'msk     2       6     msk första rad är på rad 2 och omfattar 6 rader dvs slutar på rad 7
 'msklag  8       20    msklag första rad är på rad 8 och omfattar 20 rader dvs slutar på rad 27
@@ -606,7 +490,7 @@ Public Sub SplitRow(ByVal intSearchCol As Integer, ByVal FirstCol As Integer, By
                 Blad5.Cells(i + 1, intSearchCol2) = strLargeText2
             End If
             
-            Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeTop).LineStyle = xlNone
+            Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeTop).LineStyle = xlContinuous
             Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeBottom).LineStyle = xlContinuous
             Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeBottom).Weight = xlHairline
 
@@ -660,7 +544,7 @@ Public Sub SplitRow2(ByVal intSearchCol As Integer, ByVal FirstCol As Integer, B
                 Blad5.Cells(i + 1, intSearchCol2) = strLargeText2
             End If
             
-            Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeTop).LineStyle = xlNone
+            Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeTop).LineStyle = xlContinuous
             Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeBottom).LineStyle = xlContinuous
             Blad5.Range(Cells(i + 1, FirstCol), Cells(i + 1, LastCol)).Borders(xlEdgeBottom).Weight = xlHairline
 

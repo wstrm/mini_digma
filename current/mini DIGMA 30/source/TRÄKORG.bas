@@ -1,11 +1,13 @@
 Attribute VB_Name = "Träkorg"
 Dim filFOR As String
 Dim filBAK As String
+Dim filBakNoDir As String
 Dim sheetFOR As Worksheet
 Dim sheetBAK As Worksheet
 Dim sheetMERGE As Worksheet
 Dim sheetARTIKEL As Worksheet
 Dim sheetTEMP As Worksheet
+Dim sheetRESURSER As Worksheet
 
 Sub ÖppnaFOR()
 Attribute ÖppnaFOR.VB_Description = "Öppna .FOR-fil för att sedan visas i Excel"
@@ -46,22 +48,11 @@ Attribute ÖppnaFOR.VB_ProcData.VB_Invoke_Func = " \n14"
     Set sheetMERGE = Sheets("KONVERTERA")
     Set sheetARTIKEL = Sheets("ARTIKELREG")
     Set sheetTEMP = Sheets("TEMP")
-    filFOR = "L:\AM\PRO\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value & ".FOR"
-    filBAK = "L:\AM\PRO\KAPNOTA\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value
+    filFOR = miniDIGMAForm.FORfile_Path.Text & "\" & miniDIGMAForm.OrderNummer_Text.Value & ".FOR"
+    filBAK = miniDIGMAForm.Kapnot_Path.Text & "\" & miniDIGMAForm.OrderNummer_Text.Value
     
-'Göm blad
-    sheetARTIKEL.Visible = False
-    
-'Formatera blad
-    'sheetFOR.Select
-    'Columns("J:J").Select
-    'Selection.NumberFormat = "@"
-    'sheetMERGE.Select
-    'Columns("C:C").Select
-    'Selection.NumberFormat = "@"
-    'sheetTEMP.Select
-    'Columns("A:A").Select
-    'Selection.NumberFormat = "@"
+'Visa blad
+    sheetARTIKEL.Visible = True
     
 'Leta efter .FOR-fil i L:\AM\PRO för att sedan öppna den och förbereder den för Excel.
     sheetFOR.Select
@@ -94,7 +85,7 @@ Attribute ÖppnaFOR.VB_ProcData.VB_Invoke_Func = " \n14"
         .Refresh BackgroundQuery:=False
     End With
     
-    On Error GoTo Errmsg2
+    'On Error GoTo Errmsg2
     
     'Kör MergeBAK_FOR
     Call MergeBAK_FOR
@@ -118,18 +109,14 @@ Attribute MergeBAK_FOR.VB_ProcData.VB_Invoke_Func = " \n14"
 ' "Sammansätter BAK med FOR-filen."
 
     'Bestäm variabler
-    Dim filBakNoDir As String
-    filFOR = "L:\AM\PRO\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value & ".FOR"
-    filBAK = "L:\AM\PRO\KAPNOTA\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value
-    filBakNoDir = Sheets("PROGRAMÖVERSIKT").TextBox1.Value
-    
+    filBakNoDir = miniDIGMAForm.OrderNummer_Text.Value
     
     On Error GoTo Errmsg
     
     sheetBAK.Activate
 With ActiveSheet.QueryTables.Add(Connection:="TEXT;" & filBAK, _
         Destination:=Range("$A$1"))
-        .Name = Sheets("PROGRAMÖVERSIKT").TextBox1.Value & ".BAK"
+        .Name = filBakNoDir & ".BAK"
         .FieldNames = True
         .RowNumbers = False
         .FillAdjacentFormulas = False
@@ -158,26 +145,15 @@ With ActiveSheet.QueryTables.Add(Connection:="TEXT;" & filBAK, _
     
     On Error GoTo Errmsg2
     
-    'Merge FOR & BAK
-    sheetFOR.Activate
-    
-    
     'Lägg in 27st rader överst.
-    ActiveSheet.[1:27].Insert Shift:=xlDown
+    sheetFOR.[1:27].Insert Shift:=xlDown
     
+    'Läs in korgtyp och ändra bild i bladet TRÄKORG
+    Call GetIngType(sheetBAK.Range("A11"), sheetBAK.Range("A12"), sheetBAK.Range("A13"))
+        
     'Kopiera från BAK till FOR
-    sheetBAK.Activate
-    Range("A2,A3,A4,A6,A9,A10:A13").Select
-    Selection.Copy
-    sheetFOR.Activate
-    Range("B1").Select
-    ActiveSheet.Paste
-    sheetBAK.Activate
-    Range("B2,B3,B4,B6,B9,B10").Select
-    Selection.Copy
-    sheetFOR.Activate
-    Range("B12").Select
-    ActiveSheet.Paste
+    sheetBAK.Range("A2,A3,A4,A6,A9,A10:A13").Copy Destination:=sheetFOR.Range("B1")
+    sheetBAK.Range("B2,B3,B4,B6,B9,B10").Copy Destination:=sheetFOR.Range("B12")
    
     'Stäng BAK och öppna igen med ny FieldInfo
     Workbooks.OpenText Filename:=filBAK, Origin:=xlMSDOS, _
@@ -224,9 +200,9 @@ With ActiveSheet.QueryTables.Add(Connection:="TEXT;" & filBAK, _
     Windows(filBakNoDir).Activate
     ActiveWindow.Close False
     
-    'Lägg in information till "PROGRAMÖVERSIKT"
-    Sheets("Meny").[B12] = Sheets(".FOR").[B13]
-    Sheets("Meny").[B13] = Sheets(".FOR").[B15]
+    'Lägg in information till "RESURSER"
+    Sheets("RESURSER").[A5] = Sheets(".FOR").[B13]
+    Sheets("RESURSER").[A6] = Sheets(".FOR").[B15]
     
     'Välj B30:E?? för att sedan konvertera nummer & text
     sheetFOR.Activate
@@ -395,16 +371,19 @@ Sub RWartikel_Sök()
     Exit Sub
     
 Errmsg:
+   miniDIGMAForm.Status_Label.Caption = "Misslyckades att återställa format på celler i 'temp'."
    MsgBox ("Misslyckades att hitta resurser i 'RWartikel', se till att den finns."), vbOKOnly, ".FOR-fil"
    Application.ScreenUpdating = True
    Exit Sub
     
 Errmsg2:
+   miniDIGMAForm.Status_Label.Caption = "Misslyckades att återställa format på celler i 'temp'."
    MsgBox ("Misslyckades att återställa format på celler i 'temp'."), vbOKOnly, ".FOR-fil"
    Application.ScreenUpdating = True
    Exit Sub
    
 Errmsg3:
+   miniDIGMAForm.Status_Label.Caption = "Misslyckades att radera temporära blad, dem kanske redan blivit raderade?"
    MsgBox ("Misslyckades att radera temporära blad, dem kanske redan blivit raderade?"), vbOKOnly, ".FOR-fil"
    Application.ScreenUpdating = True
 End Sub
@@ -414,6 +393,8 @@ Sub Konvertera_DIGMA()
     
     'Bestäm variabler
     Dim selRange, selRangeMERGE As String
+    Dim sheetRESURSER As Worksheet
+    Set sheetRESURSER = Sheets("RESURSER")
     Set sheetFOR = Sheets(".FOR")
     Set sheetBAK = Sheets("KAPNOTA")
     Set sheetMERGE = Sheets("KONVERTERA")
@@ -466,6 +447,10 @@ Sub Konvertera_DIGMA()
         TrailingMinusNumbers:=True
     End With
     
+    'Kalla på FindDimDraw, vilket hittar alla dimensioner och konverterar dem för att sedan kunna användas
+    'när CalcDimDraw räknar ut de olika måtten för träramsritningen
+    Call FindDimDraw
+    
     'Definiera range för KONVERTERA
     sheetMERGE.Activate
     With ActiveSheet
@@ -477,54 +462,38 @@ Sub Konvertera_DIGMA()
     With sheetMERGE
         
         '-------------BENÄMNINGAR--------------'
-        .Range("E" & selRangeMERGE + 2).FormulaR1C1 = "LAMINAT INVÄNDIGT"
-        .Range("E" & selRangeMERGE + 3).FormulaR1C1 = " > MÅTT"
-        .Range("E" & selRangeMERGE + 4).FormulaR1C1 = "LAMINAT UTVÄNDIGT"
-        .Range("E" & selRangeMERGE + 5).FormulaR1C1 = "LAMINAT TAK"
-        .Range("E" & selRangeMERGE + 6).FormulaR1C1 = "GOLVBELÄGGNING"
-        .Range("E" & selRangeMERGE + 7).FormulaR1C1 = "MÅTT"
-        .Range("E" & selRangeMERGE + 8).FormulaR1C1 = "MÅTT"
-        .Range("E" & selRangeMERGE + 9).FormulaR1C1 = "MÅTT"
+        '.Range("E" & selRangeMERGE + 2).FormulaR1C1 = "LAMINAT INVÄNDIGT"
+        '.Range("E" & selRangeMERGE + 3).FormulaR1C1 = " > MÅTT"
+        '.Range("E" & selRangeMERGE + 4).FormulaR1C1 = "LAMINAT UTVÄNDIGT"
+        '.Range("E" & selRangeMERGE + 5).FormulaR1C1 = "LAMINAT TAK"
+        '.Range("E" & selRangeMERGE + 6).FormulaR1C1 = "GOLVBELÄGGNING"
+        '.Range("E" & selRangeMERGE + 7).FormulaR1C1 = "MÅTT"
+        '.Range("E" & selRangeMERGE + 8).FormulaR1C1 = "MÅTT"
+        '.Range("E" & selRangeMERGE + 9).FormulaR1C1 = "MÅTT"
         
         '----------------RESURS----------------'
         .Range("N" & selRangeMERGE + 1).FormulaR1C1 = "ömått"
-        .Range("N" & selRangeMERGE + 2).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 3).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 4).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 5).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 6).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 7).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 8).FormulaR1C1 = "msk"
-        .Range("N" & selRangeMERGE + 9).FormulaR1C1 = "msk"
         
         '----------------STJÄRNA---------------'
         .Range("A" & selRangeMERGE + 1).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 2).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 3).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 4).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 5).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 6).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 7).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 8).FormulaR1C1 = "*"
-        .Range("A" & selRangeMERGE + 9).FormulaR1C1 = "*"
         
         '---------------RADNUMMER--------------'
         sheetMERGE.Range("A1:A" & selRangeMERGE).Value = "0"
     End With
     
     'Lägg in information
-    sheetFOR.Range("B19").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 2)
-    sheetFOR.Range("B20").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 3)
-    sheetFOR.Range("B5").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 4)
-    sheetFOR.Range("B6").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 5)
-    sheetMERGE.Range("J" & selRangeMERGE + 6).Value = sheetFOR.[B25].Value & " " & sheetFOR.[B26].Value
-    sheetFOR.Range("B21").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 7)
-    sheetFOR.Range("B22").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 8)
-    sheetFOR.Range("B23").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 9)
+    sheetFOR.Range("B19").Copy Destination:=sheetRESURSER.Range("A7") 'Lam. inv
+    sheetFOR.Range("B20").Copy Destination:=sheetRESURSER.Range("A8") '> Mått.
+    sheetFOR.Range("B5").Copy Destination:=sheetRESURSER.Range("A9") 'Lam. inv.
+    sheetFOR.Range("B6").Copy Destination:=sheetRESURSER.Range("A10") 'Lam. tak
+    sheetRESURSER.Range("A11").Value = sheetFOR.[B25].Value & " " & sheetFOR.[B26].Value 'Golvbel.
+    'sheetFOR.Range("B21").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 7) 'Mått 1
+    'sheetFOR.Range("B22").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 8) 'Mått 2
+    'sheetFOR.Range("B23").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 9) 'Mått 3
     
     'Lägg in beredare & order nr.
     sheetFOR.Range("B16").Copy Destination:=sheetMERGE.Range("J" & selRangeMERGE + 1)
-    sheetMERGE.Range("C" & selRangeMERGE + 1).FormulaR1C1 = Sheets("PROGRAMÖVERSIKT").TextBox1.Value
+    sheetMERGE.Range("C" & selRangeMERGE + 1).FormulaR1C1 = filBakNoDir
     
     'Lägg in mått
     sheetFOR.Range("B18").Copy Destination:=sheetMERGE.Range("G" & selRangeMERGE + 1)
@@ -543,13 +512,13 @@ Sub Konvertera_DIGMA()
 
     Application.Calculation = xlCalculationAutomatic
     
-'Spara som ny order
+    'Spara som ny order
     
     sheetMERGE.Activate
     Dim saveDir As String
     Dim saveFile As String
-    saveDir = "L:\Order\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value
-    saveFile = "L:\Order\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value & "\" & Sheets("PROGRAMÖVERSIKT").TextBox1.Value & ".xls"
+    saveDir = miniDIGMAForm.OrderPath_Text.Text & "\" & filBakNoDir
+    saveFile = miniDIGMAForm.OrderPath_Text.Text & "\" & filBakNoDir & "\" & filBakNoDir & ".xls"
     If FileFolderExists(saveDir) Then
     Else
         MkDir saveDir
@@ -563,6 +532,7 @@ Sub Konvertera_DIGMA()
     ActiveWorkbook.SaveAs Filename:=saveFile, _
     FileFormat:=xlExcel8, Password:="", WriteResPassword:="", _
     ReadOnlyRecommended:=False, CreateBackup:=False
+    Workbooks(filBakNoDir & ".xls").Close SaveChanges:=False
     sheetMERGE.Delete
     Application.DisplayAlerts = True
     
@@ -571,6 +541,190 @@ Sub Konvertera_DIGMA()
 Errmsg:
    MsgBox ("Misslyckades att konvertera till DIGMA format."), vbOKOnly, ".FOR-fil"
    Application.ScreenUpdating = True
+   miniDIGMAForm.Status_Label.Caption = "Misslyckades att konvertera till DIGMA format."
    Exit Sub
     
 End Sub
+
+Public Sub FindDimDraw()
+
+    Set sheetFOR = Sheets(".FOR")
+    
+    On Error Resume Next
+    Application.DisplayAlerts = False
+    With sheetFOR
+    .[B21].TextToColumns Destination:=Range("E21"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=True, Space:=False, Other:=False, OtherChar _
+        :="", FieldInfo:=Array(Array(1, 1)), _
+        TrailingMinusNumbers:=True
+    .[B22].TextToColumns Destination:=Range("E22"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=True, Space:=False, Other:=False, OtherChar _
+        :="", FieldInfo:=Array(Array(1, 1)), _
+        TrailingMinusNumbers:=True
+    .[B23].TextToColumns Destination:=Range("E23"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=True, Space:=False, Other:=False, OtherChar _
+        :="", FieldInfo:=Array(Array(1, 1)), _
+        TrailingMinusNumbers:=True
+    '------------------------------------------------------------------------------'
+    .[E21].TextToColumns Destination:=Range("B21"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=False, Space:=False, Other:=True, OtherChar _
+        :="x", FieldInfo:=Array(Array(1, 1), Array(2, 1), Array(3, 1)), _
+        TrailingMinusNumbers:=True
+    .[E22].TextToColumns Destination:=Range("B22"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=False, Space:=False, Other:=True, OtherChar _
+        :="x", FieldInfo:=Array(Array(1, 1), Array(2, 1), Array(3, 1)), _
+        TrailingMinusNumbers:=True
+    .[E23].TextToColumns Destination:=Range("B23"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=False, Space:=False, Other:=True, OtherChar _
+        :="x", FieldInfo:=Array(Array(1, 1), Array(2, 1), Array(3, 1)), _
+        TrailingMinusNumbers:=True
+    End With
+    Application.DisplayAlerts = True
+    
+    On Error GoTo 0
+    
+    Call CalcDimDraw(sheetFOR.[B21].Value, sheetFOR.[C21].Value, sheetFOR.[D21].Value, sheetFOR.[F21].Value, _
+        sheetFOR.[B22].Value, sheetFOR.[C22].Value, sheetFOR.[D22].Value, sheetFOR.[F22].Value, _
+        sheetFOR.[B23].Value, sheetFOR.[C23].Value, sheetFOR.[D23].Value, sheetFOR.[F23].Value, _
+        sheetFOR.[B18].Value, sheetFOR.[C18].Value, sheetFOR.[D18].Value)
+
+End Sub
+                            'Ing. Kod 1 - 3 mått: (orginal format: BxCxD,F)                        | Inv. mått: (orginal format: BxCxD)'
+                            'B21   C21   D21   F21   B22   C22   D22   F22   B23   C23   D23   F23 | B18   C18   D18'
+Public Function CalcDimDraw(B11A, B11B, B11C, B11D, B12A, B12B, B12C, B12D, B13A, B13B, B13C, B13D, B18A, B18B, B18C As String) As String
+
+    'MsgBox "Resultat: " & B11A & B11B & B11C & B11D & B12A & B12B & B12C & B12D & B13A & B13B & B13C & B13D & B18A & B18B & B18C
+
+    Set sheetRESURSER = Sheets("RESURSER")
+
+    'Ing.Kod 1:'
+    'NR1:'
+    sheetRESURSER.[A19].Value = B11D
+
+    'NR2:'
+    sheetRESURSER.[A20].Value = B11A
+
+    'NR3:'
+    sheetRESURSER.[A21].Value = B18A - B11D - B11A
+
+    'NR4:'
+    sheetRESURSER.[A22].Value = B11B
+
+    'Ing.Kod 2:'
+    'NR1:
+    sheetRESURSER.[A23].Value = B12D
+
+    'NR2:'
+    sheetRESURSER.[A24].Value = B12A
+
+    'NR3:'
+    sheetRESURSER.[A25].Value = B18A - B12D - B12A
+
+    'NR4:'
+    sheetRESURSER.[A26].Value = B12B
+
+    'Ing.Kod 3:'
+    'NR1:
+    sheetRESURSER.[A27].Value = B13D
+
+    'NR2:'
+    sheetRESURSER.[A28].Value = B13A
+
+    'NR3:'
+    sheetRESURSER.[A29].Value = B18B - B13D - B13A
+
+    'NR4:'
+    sheetRESURSER.[A30].Value = B13B
+
+End Function
+
+'FUNKTIONER:
+Public Function GetIngType(intIngKOD1, intIngKOD2, intIngKOD3 As String) As Boolean
+    If Not intIngKOD1 = "" And Not intIngKOD2 = "" Then
+        If Right(intIngKOD3, 1) = "H" Then
+            'MsgBox "FRAM, UPP & HÖGER"
+            With Sheets("TRÄKORG")
+                .Shapes("top-right-bottom").Visible = True
+                .Shapes("top-left-bottom").Visible = False
+                .Shapes("left-bottom").Visible = False
+                .Shapes("right-bottom").Visible = False
+                .Shapes("top-bottom").Visible = False
+                .Shapes("bottom").Visible = False
+                .Shapes("HIDER-LEFT").Visible = True
+                .Shapes("HIDER-RIGHT").Visible = False
+                .Shapes("HIDER-TOP").Visible = False
+            End With
+        ElseIf Right(intIngKOD3, 1) = "V" Then
+            'MsgBox "FRAM, UPP & VÄNSTER"
+            With Sheets("TRÄKORG")
+                .Shapes("top-right-bottom").Visible = False
+                .Shapes("top-left-bottom").Visible = True
+                .Shapes("left-bottom").Visible = False
+                .Shapes("right-bottom").Visible = False
+                .Shapes("top-bottom").Visible = False
+                .Shapes("bottom").Visible = False
+                .Shapes("HIDER-LEFT").Visible = False
+                .Shapes("HIDER-RIGHT").Visible = True
+                .Shapes("HIDER-TOP").Visible = False
+            End With
+        Else
+            'MsgBox "FRAM & UPP"
+            With Sheets("TRÄKORG")
+                .Shapes("top-right-bottom").Visible = False
+                .Shapes("top-left-bottom").Visible = False
+                .Shapes("left-bottom").Visible = False
+                .Shapes("right-bottom").Visible = False
+                .Shapes("top-bottom").Visible = True
+                .Shapes("bottom").Visible = False
+                .Shapes("HIDER-LEFT").Visible = True
+                .Shapes("HIDER-RIGHT").Visible = True
+                .Shapes("HIDER-TOP").Visible = False
+            End With
+        End If
+    ElseIf Right(intIngKOD3, 1) = "H" Then
+        'MsgBox "FRAM & HÖGER"
+        With Sheets("TRÄKORG")
+                .Shapes("top-right-bottom").Visible = False
+                .Shapes("top-left-bottom").Visible = False
+                .Shapes("left-bottom").Visible = False
+                .Shapes("right-bottom").Visible = True
+                .Shapes("top-bottom").Visible = False
+                .Shapes("bottom").Visible = False
+                .Shapes("HIDER-LEFT").Visible = True
+                .Shapes("HIDER-RIGHT").Visible = False
+                .Shapes("HIDER-TOP").Visible = True
+        End With
+    ElseIf Right(intIngKOD3, 1) = "V" Then
+        'MsgBox "FRAM & VÄNSTER"
+        With Sheets("TRÄKORG")
+                .Shapes("top-right-bottom").Visible = False
+                .Shapes("top-left-bottom").Visible = False
+                .Shapes("left-bottom").Visible = True
+                .Shapes("right-bottom").Visible = False
+                .Shapes("top-bottom").Visible = False
+                .Shapes("bottom").Visible = False
+                .Shapes("HIDER-LEFT").Visible = False
+                .Shapes("HIDER-RIGHT").Visible = True
+                .Shapes("HIDER-TOP").Visible = True
+        End With
+    Else
+        'MsgBox "INGEN KOD2 & 3 AKA. FRAM"
+        With Sheets("TRÄKORG")
+                .Shapes("top-right-bottom").Visible = False
+                .Shapes("top-left-bottom").Visible = False
+                .Shapes("left-bottom").Visible = False
+                .Shapes("right-bottom").Visible = False
+                .Shapes("top-bottom").Visible = False
+                .Shapes("bottom").Visible = True
+                .Shapes("HIDER-LEFT").Visible = True
+                .Shapes("HIDER-RIGHT").Visible = True
+                .Shapes("HIDER-TOP").Visible = True
+        End With
+    End If
+End Function

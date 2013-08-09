@@ -9,7 +9,11 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 Option Explicit
 Private Sub Workbook_Open()
-'Läs in RWartikel (artikel.skv)
+    'Läs in RWartikel (artikel.skv)
+    On Error Resume Next
+    Application.DisplayAlerts = False
+    Sheets("ARTIKELREG").Delete
+    Sheets.Add.Name = "ARTIKELREG"
     Sheets("ARTIKELREG").Activate
     With ActiveSheet.QueryTables.Add(Connection:="TEXT;L:\AM\SYSRW\artikel.skv", _
         Destination:=Range("$A$1"))
@@ -31,10 +35,11 @@ Private Sub Workbook_Open()
         .TextFileTextQualifier = xlTextQualifierDoubleQuote
         .TextFileConsecutiveDelimiter = False
         .TextFileTabDelimiter = False
-        .TextFileSemicolonDelimiter = False
-        .TextFileCommaDelimiter = True
+        .TextFileSemicolonDelimiter = True
+        .TextFileCommaDelimiter = False
         .TextFileSpaceDelimiter = False
         .TextFileColumnDataTypes = Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2)
         .Refresh BackgroundQuery:=False
     End With
+    miniDIGMAForm.Show
 End Sub

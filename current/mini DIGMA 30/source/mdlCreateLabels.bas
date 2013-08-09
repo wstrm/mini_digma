@@ -1,87 +1,4 @@
 Attribute VB_Name = "mdlCreateLabels"
-'Public Sub CreateLabels()
-'Dim vntData As Variant
-'Dim intStartRow As Integer
-'Dim intEndRow As Integer
-'
-'
-'
-''Skapa Kaplista
-'intStartRow = GetStartRowLeft("KAPLISTA")
-'intEndRow = GetEndRow(intStartRow)
-'vntData = GetData("50649", 5, 1, 10, 7, 8, 9, intStartRow, intEndRow)
-'
-'
-''Skapa Lager
-'intStartRow = GetStartRowLeft("LAGER")
-'intEndRow = GetEndRow(intStartRow)
-'vntData = GetData("50649", 5, 1, 10, 7, 8, 9, intStartRow, intEndRow)
-'
-'
-'
-''Skapa Klipplista
-'
-'
-'
-'
-''Skapa Plåtlager
-'
-'
-'Call InsertData(vntData, wsKaplista)
-'
-'
-''End Sub
-'
-''Hämtar startrad för vald grupp på utskrift vänster
-'Private Function GetStartRowLeft(ByVal strGroup As String) As Integer
-'    Dim i As Integer
-'
-'
-'    intStartRow = 0
-'    For i = 5 To 1000
-'        If strGroup = Blad5.Cells(i, 5) Then
-'            GetStartRowLeft = i + 4
-'            Exit Function
-'        End If
-'    Next i
-''
-''
-''End Function
-'
-''Hämtar startrad för vald grupp på utskrift Höger
-'Private Function GetStartRowRight(ByVal strGroup As String) As Integer
-'    Dim i As Integer
-'    Dim intStartRow As Integer
-'
-'    intStartRow = 0
-'    For i = 5 To 1000
-'        If strGroup = Blad5.Cells(i, 18) Then
-'            GetStartRowRight = i
-'            Exit Function
-'        End If
-'    Next i
-'
-'    GetStartRow = intStartRow
-'End Function
-'
-'Private Function GetEndRow(ByVal intStartRow As Integer) As Integer
-'    Dim i As Integer
-'    Dim intEndRow As Integer
-'
-'
-'    For i = intStartRow To 1000
-'        If Blad5.Cells(i, 5) = "" And Blad5.Cells(i, 5) = "" And Blad5.Cells(i, 10) = "" Then
-'            GetEndRow = i - 1
-'            Exit Function
-'        End If
-'    Next i
-'
-'
-'End Function
-
-
-
-
 Public Function GetLabelData(ByVal strorderNr, ByVal intBenamningCol As Integer, ByVal intRadCol As Integer, ByVal intAnmarkningCol As Integer, ByVal intLangdCol As Integer, _
 ByVal intBreddCol As Integer, ByVal intTjockCol As Integer, ByVal intStartRow As Integer, ByVal intEndRow As Integer) As Variant
 
@@ -93,7 +10,7 @@ ByVal intBreddCol As Integer, ByVal intTjockCol As Integer, ByVal intStartRow As
     intItem = 1
     For i = intStartRow To intEndRow
         ReDim Preserve vntData(1 To 7, 1 To intItem)
-        vntData(1, intItem) = strorderNr
+        vntData(1, intItem) = miniDIGMAForm.OrderNummer_Text.Value
         vntData(2, intItem) = Blad5.Cells(i, intBenamningCol)
         vntData(3, intItem) = Blad5.Cells(i, intRadCol)
         vntData(4, intItem) = Blad5.Cells(i, intAnmarkningCol)
@@ -108,21 +25,6 @@ ByVal intBreddCol As Integer, ByVal intTjockCol As Integer, ByVal intStartRow As
     GetLabelData = vntData
 
 End Function
-
-'Private Function GetLager() As Variant
-'
-'
-'End Function
-'
-'Private Function GetKlipplista() As Variant
-'
-'
-'End Function
-'
-'Private Function GetPlatlager() As Variant
-'
-'
-'End Function
 
 Public Sub InsertLabelData(ByVal vntData As Variant, ws As Worksheet)
     Dim i As Integer
@@ -143,7 +45,7 @@ Public Sub InsertLabelData(ByVal vntData As Variant, ws As Worksheet)
         ws.Cells(intRow + 2, intCol) = vntData(2, i)
         ws.Cells(intRow + 3, intCol) = vntData(4, i)
         ws.Cells(intRow + 4, intCol) = "L:" & vntData(5, i) & " B:" & vntData(6, i) & " Tj:" & vntData(7, i)
-        Blad1.Shapes("picLogga").Copy
+        Sheets("RESURSER").Shapes("picLogga").Copy
         ws.Cells(intRow + 6, intCol).PasteSpecial
         ws.Cells(intRow + 6, intCol + 1) = "+46 (0)44 - 28 99 00"
         
@@ -155,8 +57,6 @@ Public Sub InsertLabelData(ByVal vntData As Variant, ws As Worksheet)
         End If
         
     Next i
-    
-    'ws.Cells(1, 1).Select
 
 End Sub
 
