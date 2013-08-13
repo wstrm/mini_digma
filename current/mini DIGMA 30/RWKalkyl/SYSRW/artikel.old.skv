@@ -1,0 +1,501 @@
+1,kod,art.nr,ant,enh,art.ben,anm 1 (material),L,B,T,anm 2,klippm. br1,klippm. br2,klippm. h”jd,Resus,Fullst. Art. Nr.
+,,8-09-,,,,,,,,,,,,,
+2,1,10,,,golvram tapp,furu,M(160),115,56,,,,,msk,8-09-10
+2,1,20,,,golvram slits ,furu,M(165),115,56,,,,,msk,8-09-20
+2,1,30,,,golvram mellan,furu,M(171),65,56,,,,,msk,8-09-30
+2,1,40,,,golvskiva,lamell,M(1),M(2)+M(6),25,,,,,msk,8-09-40
+2,1,41,,,golvskiva,plywood rundas und.sida f”r j„rnram,M(1)+18,M(2)+175,27,,,,,msk,8-09-41
+2,1,42,,,golvskiva,plywood rundas und.sida f”r j„rnram,M(1)+25,M(2)+160,24,,,,,msk,8-09-42
+2,1,43,,,golvskiva,gips,M(1),M(2)+M(6),6,,,,,msk,8-09-43
+2,1,44,,,golvskiva,gips,M(1),M(2)+M(6),13,,,,,msk,8-09-44
+2,1,50,,,golvskiva,HDF,M(1),M(2)+M(6),3.2,,,,,msk,8-09-50
+2,1,55,,,golvskiva,oljeh„rd.masonit,M(1),M(2)+M(6),3.2,,,,,msk,8-09-55
+2,1,60,,,golv-skydd ,mdf ,M(1)-30,M(2)+M(6)-30,3.2,,,,,msk,8-09-60
+2,1,61,,,golvskydd smalhiss,mdf lev l”s,M(1)-30,M(2)+M(6)-30,3.2,,,,,msk,8-09-61
+2,3,70,4,,kantlist,,%1,%1,%1,,,,,msk,8-09-70
+2,3,90,,,h”rn,,,,,,,,,msk,8-09-90
+2,3,100,,,sida NTD,plyw,,,12,,,,,msk,8-09-100
+2,3,110,,,rygg NTD,plyw,,,12,,,,,msk,8-09-110
+2,3,112,,,5 mm h”rn inredning,,,,,,,,,msk,8-09-112
+2,3,113,,,14 mm h”rn inredning,,,,,,,,,msk,8-09-113
+2,3,120,,,framsida,OSB,,,25,,,,,msk,8-09-120
+2,3,130,,,framsida upp,OSB,%1,%1,25,,,,,msk,8-09-130
+,3,131,1,,framsida upp SH,melamin,%1,%1,22,,,,,msk,8-09-131
+1,1,200,1,,L†g grop golv,,,,,enl.ritn,,,,msk,8-09-200
+1,1,210,1,,Lite golv,,M(2)+M(14)+20,M(1)+40,80,enl.ritn,,,,msk,8-09-210
+1,1,220,1,,Balkram,,M(2)+M(14)+20,M(1)+40,80,enl.ritn,,,,msk,8-09-220
+1,1,221,1,,delad balkram,,M(2)+M(14)+20,M(1)+40,80,enl.ritn,,,,msk,8-09-221
+1,1,288,4,,golvinf„st.,8-09-0288 GMV inkl. skruv,,,,,,,,msk,8-09-288
+1,1,290,,,golvd„mpning,enl.ritn,,,,,,,,msk,8-09-290
+1,5,295,,,takd„mpning enkel,enl.ritn,,,,,,,,msk,8-09-295
+1,5,296,,,takd„mpning dubbel,enl.ritn,,,,,,,,msk,8-09-296
+1,5,401,,,sockellist,,,,,,,,,msk,8-09-401
+1,4,411,,,k„derlist  ,,M(1)+M(2)+M(2)+M(1)-M(13)-M(27),,%1,,,,,msk,8-09-411
+1,4,431,1,,RF sockel,typ JM,%1,%1,,,,,,msk,8-09-431
+1,4,433,2,,JM TK-kantlist,,,2225,,,,,,msk,8-09-433
+1,4,434,4,,JM h”rnlist,,,1315,,,,,,msk,8-09-434
+1,4,435,4,,JM h”rnlist,,,885,,,,,,msk,8-09-435
+1,4,412,,,taklist,aluminium,M(1)*2+M(2)*2,,,,,,,msk,8-09-412
+1,4,413,,,h”rnskarvlist,aluminium,M(3)-12,,,,,,,msk,8-09-413
+1,4,414,,,mittskarvlist,aluminium,M(3)-12,,,,,,,msk,8-09-414
+1,4,415,,,avslutningslist,rostfri,M(3)-12,,,,,,,msk,8-09-415
+1,4,416,,,taklist,guldelox.,M(1)*2+M(2)*2,,,,,,,msk,8-09-416
+1,4,417,,,h”rnskarvlist,guldelox.,M(3)-12,,,,,,,msk,8-09-417
+1,4,418,,,mittskarvlist,guldelox.,M(3)-12,,,,,,,msk,8-09-418
+1,4,424,,,taklist,aluminium blank,M(1)*2+M(2)*2,,,,,,,msk,8-09-424
+1,4,425,,,h”rnskarvlist,aluminium blank,M(3),,,,,,,msk,8-09-425
+1,4,426,,,mittskarvlist,aluminium blank,M(3),,,limmad,,,,msk,8-09-426
+1,4,610,,,Sockel,RF ,%1,%1,,,,,,msk,8-09-610
+1,4,620,,,Sockel,RF ,%1,100,,,,,,msk,8-09-620
+1,4,621,,,BEKL,RF,%1,,,,,,,msk,8-09-621
+1,4,700,,,vent.galler,rostfri,,,,,,,,msk,8-09-700
+1,4,705,,,vent.galler,f”r dosborr,,,,,,,,msk,8-09-705
+1,4,710,,,vent.galler,m„ssing,,,,,,,,msk,8-09-710
+2,6,712,1,,underl„gg,plyw.,1000,35,10,,,,,msk,8-09-712
+1,3,730,,,vent.bussningar bok,,,,,,,,,msk,8-09-730
+1,3,731,,,vent.bussningar bj”rk,,,,,,,,,msk,8-09-731
+1,3,732,,,vent.bussningar ek,,,,,,,,,msk,8-09-732
+1,4,810,,,handledare,32› RF,M(2)-200,,,%1,,,,msk,8-09-810
+1,4,811,,,h”rnb”j,32› RF,,,%1,,,,,msk,8-09-811
+1,4,812,,,h”rnb”j,32› RF,,,%1,,,,,msk,8-09-812
+1,4,813,2,,„ndb”j,32› RF,,,,,,,,msk,8-09-813
+1,4,814,,,„ndpropp,f”rnicklad,,,,,,,,msk,8-09-814
+1,4,815,2,,„ndpropp,svart,,,,,,,,msk,8-09-815
+1,4,816,2,,handledarh†llare,32› RF,,,,,,,,msk,8-09-816
+1,4,818,,,handledarh†llare,32› Koppar,,,,,,,,msk,8-09-818
+1,4,820,,,handledare,32› m„ssing,M(2)-200,,,%1,,,,msk,8-09-820
+1,4,821,,,„ndb”j,32› m„ssing,,,,,,,,msk,8-09-821
+1,4,822,,,h”rnb”j,32› m„ssing,,,,,,,,msk,8-09-822
+1,4,823,,,handledarh.guld,32› m„ssing,,,,,,,,msk,8-09-823
+1,4,825,,,handledarf„ste,90ø,,,,,,,,msk,8-09-825
+1,4,826,,,handledarf„ste,45ø,,,,,,,,msk,8-09-826
+1,4,829,,,h†llare,32› rostfri blankpolerad,,,,,,,,msk,8-09-829
+1,4,830,,,handledare,32› rostfri blankpolerad,,,,,,,,msk,8-09-830
+1,4,831,,,h”rnb”j,32› rostfri blankpolerad,,,,,,,,msk,8-09-831
+1,4,832,,,h”rnb”j,32› rostfri blankpolerad,,,,,,,,msk,8-09-832
+1,4,827,,,handledarf„ste,„ndt„tat,,,,,,,,msk,8-09-827
+1,4,840,,,handledare,38› Alu.,M(2)-200,,,%1,,,,msk,8-09-840
+1,4,940,,,handledare,%1 38› bok,M(2)-200,,,%1 ,,,,msk,8-09-940
+1,4,941,,,„ndb”j,,,,,%1 38› bok,,,,msk,8-09-941
+1,4,942,,,h”rnb”j,%1 38› bok,,,,,,,,msk,8-09-942
+1,4,943,,,Handledare,%1 38› bok,M(2)-200,,,%1 ,,,,msk,8-09-943
+1,4,944,,,Handledare,%1 38› ek,M(2)-200,,,%1 ,,,,msk,8-09-944
+1,4,945,,,Handledare,%1 38› bj”rk,M(2)-200,,,%1 ,,,,msk,8-09-945
+2,4,1000,,,handledare,bok,M(2)-200,95,20,,,,,msk,8-09-1000
+1,4,1001,,,handledarbeslag,Sapa nr 51400 vitlack.,,,,,,,,msk,8-09-1001
+1,4,1002,,,handledarbeslag,RF,,,,,,,,msk,8-09-1002
+2,4,1010,,,handledare,%1 ek ,M(2)-200,95,20,,,,,msk,8-09-1010
+1,4,1010,,,avb„rardistans,RF nr 1010,1000,,,,,,,msk,8-09-1010
+2,4,1020,,,handledare,bok RF,M(2)-200,100,20,,,,,msk,8-09-1020
+2,4,1100,,,handledare,bok,M(2)-200,150,30,,,,,msk,8-09-1100
+2,4,1110,,,handledare,ek,M(2)-200,150,30,,,,,msk,8-09-1110
+2,4,1120,,,handledare,bok RF,M(2)-200,150,30,,,,,msk,8-09-1120
+2,4,1160,,,handledare special,,,,,,,,,msk,8-09-1160
+2,4,1200,,,avb„rare,%1 bok,M(2)-100,60,20,,,,,msk,8-09-1200
+2,4,1201,,,avb„rare lasthiss,%1 bok obehandlad,M(2)-100,60,20,,,,,msk,8-09-1201
+2,4,1204,,,avb„rare,%1 ek ,M(2)-100,60,20,,,,,msk,8-09-1204
+2,4,1205,,,avb„rare,%1 bj”rk,M(2)-100,60,20,,,,,msk,8-09-1205
+2,4,1206,,,avb„rare,%1 bok,M(2)-100,60,20,,,,,msk,8-09-1206
+2,4,1207,,,avb„rare,%1 ek ,M(2)-100,60,20,,,,,msk,8-09-1207
+2,4,1208,,,avb„rare,%1 bj”rk,M(2)-100,60,20,,,,,msk,8-09-1208
+2,4,1210,,,avb„rare,%1 bok,M(1)-100,60,20,,,,,msk,8-09-1210
+2,4,1220,,,avb„rare,%1 bok,%1 M(2)-20,%1,%1,%1,,,,msk,8-09-1220
+2,4,1230,,,avb„rare,%1 bok,M(1),%1,%1,%1,,,,msk,8-09-1230
+2,4,1240,,,avb„rarbekl„dnad,%1 MDF RF 0.8,M(2)-100,100,19,,,,,msk,8-09-1240
+1,4,1241,,,avb„rare,RF,,60,20,+„ndpropp,,,,msk,8-09-1241
+1,4,1242,,,avb„rare halvrund,RF 20mm,,,,,,,,msk,8-09-1242
+1,4,1243,,,avb„rare halvrund,RF 25mm,,,,,,,,msk,8-09-1243
+1,4,1244,,,avb„rare halvrund,RF 30mm,,,,,,,,msk,8-09-1244
+1,4, ,,,avb„rare halvrund,RF 38mm,,,,,,,,msk,8-09- 
+1,4,1246,,,avb„rare halvrund,RF 32mm,,,,+„ndpropp,,,,msk,8-09-1246
+1,4,1259,,,avb„rare halvrund,tr„ r.16,,,,,,,,msk,8-09-1259
+1,4,1270,,,avb„rare plast,mdf 120x12,M(2)-100,120,12,,,,,msk,8-09-1270
+2,3,1310,,,tr„profillist,%1,,,,%1,,,,msk,8-09-1310
+1,4,1439,,,l†da,%1 Kone Direkt,,,,%1,,,,msk,8-09-1439
+1,5,1444,1,,kabelkanal,enl.ritn,,,,,,,,msk,8-09-1444
+1,5,1445,1,,kabelkanal std,tr„korg,,,,:8-09-1445,,,,msk,8-09-1445
+1,3,1450,,,t-panel,enl.ritn,,,,,,,,msk,8-09-1450
+1,0,1491,1,,takluckel†s,komplett,,,,,,,,msk,8-09-1491
+2,4,1500,1,,pulpetram upp ,%1 bok,%1 ,,,,%1 ,,,msk,8-09-1500
+2,4,1510,1,,pulpetram ned ,%1 bok,%1 ,,,,%1 ,,,msk,8-09-1510
+2,4,1520,2,,pulpetram sida,%1 bok,%1 ,,,,%1,,,msk,8-09-1520
+2,4,1525,2,,pulpetlister,mdf smygas 45ø en kant,,45,8,,%1,,,msk,8-09-1525
+1,4,1800,,,spegel,,450,600,6,%1,,,,msk,8-09-1800
+1,4,1810,,,spegel,,%1 M(1),%1 1300,6,,,,,msk,8-09-1810
+1,4,1801,,,spegelklammer,nr 1801,,,,,,,,msk,8-09-1801
+1,4,1803,,,spegellister,nr 1803 guld,%2 M(1) ,,,,,,,msk,8-09-1803
+1,4,1805,1,,spegel,,270,650,6,limmas,,,,msk,8-09-1805
+1,4,1811,1,,spegel,Rund,,,6, 700 ,,,,msk,8-09-1811
+1,4,1806,,,spegellister,nr 1806,%2 M(1) ,,,,,,,msk,8-09-1806
+1,4,1807,,,spegellister,nr 1807 guld,%2 M(1) ,,,,,,,msk,8-09-1807
+1,4,1808,,,spegel,nr 1808,400,500,6,,,,,msk,8-09-1808
+1,4,1809,,,spegel,,600,700,6,,,,,msk,8-09-1809
+1,4,1810,,,spegel,,1050,950,6,,,,,msk,8-09-1810
+1,4,1811,,,spegel,,950,1050,6,,,,,msk,8-09-1811
+1,4,1820,,,spegel,rostfri,450,600,1,,,,,msk,8-09-1820
+2,4,1821,,,spegel,%1,%1,%1,%1,,,,,msk,8-09-1821
+1,4,1830,,,floatglas 3 mm,,%1,%1,3,,,,,msk,8-09-1830
+1,4,1831,,,floatglas 4 mm,,%1,%1,4,%1,,,,msk,8-09-1831
+1,4,1832,,,floatglas 5 mm,,%1,%1,5,%1,,,,msk,8-09-1832
+1,4,1833,,,floatglas 6 mm,,%1,%1,6,%1,,,,msk,8-09-1833
+1,4,1834,,,cellgummilist,,,,,,,,,msk,8-09-1834
+1,4,1835,,,h„rdat floatglas,,%1,%1,4,%1,,,,msk,8-09-1835
+1,4,1836,,,h„rdat floatglas,,%1,%1,5,%1,,,,msk,8-09-1836
+1,4,1837,,,h„rdat floatglas,,%1,%1,6,%1,,,,msk,8-09-1837
+1,4,1839,,,laminerat glas,,%1,%1,3:3,%1,,,,msk,8-09-1839
+1,4,1840,,,laminerat glas,,%1,%1,4:4,%1,,,,msk,8-09-1840
+1,4,1841,,,laminerat glas,,%1,%1,5:5,%1,,,,msk,8-09-1841
+1,4,1842,,,laminerat glas,,%1,%1,6:6,%1,,,,msk,8-09-1842
+1,4,1845,,,h„rdat lam,,%1,%1,4:4,%1,,,,msk,8-09-1845
+1,4,1846,,,h„rdat lam,,%1,%1,5:5,%1,,,,msk,8-09-1846
+1,4,1847,,,h„rdat lam,,%1,%1,6:6,%1,,,,msk,8-09-1847
+1,4,1848,1,,glaslister,rostfria inkl. skruvlister,%1,%1,,,,,,msk,8-09-1848
+1,6,1850,,,opalglas,,%1,%1,2,%1,,,,msk,8-09-1850
+1,6,1851,,,opalglas,,%1,%1,3,%1,,,,msk,8-09-1851
+1,6,1852,,,opalglas,,%1,%1,5,%1,,,,msk,8-09-1852
+1,6,1853,,,Duriflex opal,,%1,%1,"0,5",%1,,,,msk,8-09-1853
+1,4,1950,,,v„gguttag,220V,,,,inf„llt,,,,msk,8-09-1950
+1,4,2410,1,,F„llsits Jaxon Plattan,EK B=300mm,,,,2410,,,,msk,8-09-2410
+1,4,2415,1,,F„llsits Jaxon Plattan,BOK B=300mm,,,,2415,,,,msk,8-09-2415
+1,4,2416,1,,F„llsits Jaxon Plattan,BOK B=400mm,,,,2416,,,,msk,8-09-2416
+1,4,2417,1,,F„llsits Jaxon Plattan,EK B=400mm,,,,2417,,,,msk,8-09-2417
+1,4,2418,1,,F„llsits Jaxon Plattan,BJ™RK B=400mm,,,,2418,,,,msk,8-09-2418
+1,4,2440,1,,F„llsits Jaxon Plattan,BJ™RK B=300mm,,,,2440,,,,msk,8-09-2440
+1,4,2450,1,,F„llsits Jaxon Ruttan,BOK B=300mm,,,,2450,,,,msk,8-09-2450
+1,4,2451,1,,F„llsits Jaxon Ruttan,EK B=300mm,,,,2451,,,,msk,8-09-2451
+1,4,2452,1,,F„llsits Jaxon Ruttan,BJ™RK B=300mm,,,,2452,,,,msk,8-09-2452
+1,4,2455,1,,F„llsits Jaxon Ruttan,BOK B=400mm,,,,2455,,,,msk,8-09-2455
+1,4,2456,1,,F„llsits Jaxon Ruttan,EK B=400mm,,,,2456,,,,msk,8-09-2456
+1,4,2457,1,,F„llsits Jaxon Ruttan,BJ™RK B=400mm,,,,2457,,,,msk,8-09-2457
+1,4,2460,1,,F„llsits,plyw.PP,,,,,,,,msk,8-09-2460
+1,4,2570,1,,F„llsits Lucus Plattan,BOK B=300mm,,,,2570,,,,msk,8-09-2570
+1,4,2571,1,,F„llsits Lucus Ribban,BOK B=300mm,,,,2571,,,,msk,8-09-2571
+1,4,2572,1,,F„llsits Lucus Rutan,BOK B=300mm,,,,2572,,,,msk,8-09-2572
+1,4,2573,1,,F„llsits Lucus Plattan,EK B=300mm,,,,2573,,,,msk,8-09-2573
+1,4,2574,1,,F„llsits Lucus Ribban,EK B=300mm,,,,2574,,,,msk,8-09-2574
+1,4,2575,1,,F„llsits Lucus Rutan,EK B=300mm,,,,2575,,,,msk,8-09-2575
+1,4,2576,1,,F„llsits Lucus Plattan,BJ™RK B=300mm,,,,2576,,,,msk,8-09-2576
+1,4,2577,1,,F„llsits Lucus Ribban,BJ™RK B=300mm,,,,2577,,,,msk,8-09-2577
+1,4,2578,1,,F„llsits Lucus Rutan,BJ™RK B=300mm,,,,2578,,,,msk,8-09-2578
+1,4,2580,1,,F„llsits Lucus Plattan,BOK B=400mm,,,,2580,,,,msk,8-09-2580
+1,4,2582,1,,F„llsits Lucus Rutan,BOK B=400mm,,,,2582,,,,msk,8-09-2582
+1,4,2583,1,,F„llsits Lucus Plattan,EK B=400mm,,,,2583,,,,msk,8-09-2583
+1,4,2585,1,,F„llsits Lucus Rutan,EK B=400mm,,,,2585,,,,msk,8-09-2585
+1,4,2586,1,,F„llsits Lucus Plattan,BJ™RK B=400mm,,,,2586,,,,msk,8-09-2586
+1,4,2588,1,,F„llsits Lucus Rutan,BJ™RK B=400mm,,,,2588,,,,msk,8-09-2588
+1,4,2490,1,,f„llsits,%1,%1,,%1,%1,,,,msk,8-09-2490
+1,4,2500,,,f”rst„rkning pl†t,0.01,0.01,,%1,1,,,,msk,8-09-2500
+1,4,2800,,,tfn.nisch,naturelox.,,,,,,,,msk,8-09-2800
+1,4,2810,,,tfn.nisch,rostfri,,,,,,,,msk,8-09-2810
+1,4,2820,,,tfn.nisch,%1 m„ssing,,,,,,,,msk,8-09-2820
+1,4,2830,,,tfn.nisch,nat.elox.,,,,transp.lucka ,,,,msk,8-09-2830
+1,4,2840,,,tfn.nisch,%1,%1,%1,%1,%1,,,,msk,8-09-2840
+1,4,2850,,,anslagstavla,,,,,,,,,msk,8-09-2850
+1,6,3004,,,armatur T5,nr: 8-09-3004 polykarbonat,,,,,,,,msk,8-09-3004
+1,6,3005,,,armatur ,,,,,3005,,,,msk,8-09-3005
+1,6,3006,,,armatur,,,,,3006,,,,msk,8-09-3006
+1,6,3008,,,armatur T5,,2x14W,,,3008,,,,msk,8-09-3008
+1,6,3009,,,armatur T5 reglerbar,,2x24W,,,3009,,,,msk,8-09-3009
+1,6,3010,,,armatur,,,,,3010,,,,msk,8-09-3010
+1,6,3011,,,gitto major 2x9 W,,,,,,,,,msk,8-09-3011
+1,6,3013,,,T5 2x24 Sensor,,,,,3013,,,,msk,8-09-3013
+1,6,3015,,,Giotto 235 vit ,inf„lld,245mm,,,3015,,,,msk,8-09-3015
+1,6,3016,,,Giotto 235 vit ,,,,,3016,,,,msk,8-09-3016
+1,6,3020,,,armatur spec.,%1,,,,%1,,,,msk,8-09-3020
+1,6,3024,,,armatur Insaver 150 1x13w,,,,,,,,,msk,8-09-3024
+1,6,3026,,,armatur limburg 1707,,,,,,,,,msk,8-09-3026
+1,6,3027,,,plafond guld,,,,,3027,,,,msk,8-09-3027
+1,6,3028,,,plafond Oxid,,,,,3028,,,,msk,8-09-3028
+1,6,3030,,,armatur,Theofils 20984.01 10W,,,,,,,,msk,8-09-3030
+1,6,3031,,,frontring krom matt glas,,,,,,,,,msk,8-09-3031
+1,6,3032,,,frontring guld matt glas,,,,,,,,,msk,8-09-3032
+1,6,3033,,,f”rdelare,,,,,,,,,msk,8-09-3033
+1,6,3034,,,trampskydd,,,,,,,,,msk,8-09-3034
+1,6,3038,,,armatur,quasar krom,,,,,,,,msk,8-09-3038
+1,6,3039,,,armatur,Laser,,,,,,,,msk,8-09-3039
+1,6,3040,,,armatur,Pixell 100,,,,,,,,msk,8-09-3040
+1,6,3041,,,kalljushalogen  20W,20W,,,,,,,,msk,8-09-3041
+1,7,3045,,,trampskydd,,,,,,,,,msk,8-09-3045
+1,6,3047,,,armatur ,tecno guld,62mm h†l,,,,,,,msk,8-09-3047
+1,6,3048,,,armatur ,tecno 131 RF,62mm h†l,,,,,,,msk,8-09-3048
+1,6,3049,,,armatur ,tecno vit,62mm h†l,,,,,,,msk,8-09-3049
+1,6,3050,,,dimtrafo 105VA,Max 5,,,,,,,,msk,8-09-3050
+1,6,3051,,,Kabel 2m,Antares,,,,,,,,msk,8-09-3051
+1,6,3052,,,dimtrafo 160VA,Max 6,,,,,,,,msk,8-09-3052
+1,6,3107,,,armatur T 5,nr: 8-09-3107 Cosmus,,,,,,,,msk,8-09-3107
+1,6,3117,,,LED-Panel 11w vit,3117,167mm h†l,,,,,,,msk,8-09-3117
+1,6,3118,,,LED 230V,rostfri,62mm h†l,,,,,,,msk,8-09-3118
+1,6,3119,,,LED 230V,vit,62mm h†l,,,,,,,msk,8-09-3119
+1,6,3120,1,,undertak,vitt,,,,,,,,msk,8-09-3120
+1,6,3127,,,l†genergi,guld,62mm h†l,,,,,,,msk,8-09-3127
+1,6,3128,,,l†genergi,rostfri,62mm h†l,,,,,,,msk,8-09-3128
+1,6,3129,,,l†genergi,vit,62mm h†l,,,,,,,msk,8-09-3129
+1,6,3130,4,,Led Spot,,59mm h†l,,,vit 3130,,,,msk,8-09-3130
+1,6,3131,1,,Converter master,,,,,,,,,msk,8-09-3131
+1,6,3132,1,,Convertor slav,,,,,,,,,msk,8-09-3132
+1,6,3133,1,,"kopplingsbox 6 utg,",,,,,,,,,msk,8-09-3133
+1,6,3135,1,,Drivningsats,,,,,3135,,,,msk,8-09-3135
+1,6,3136,4,,trampskydd 8-09-3136,,,,,,,,,msk,8-09-3136
+1,6,3140,1,,Minikanal,TMK-T20,,,,,,,,msk,8-09-3140
+1,6,3148,1,,Hissarmatur LED,,,,,3148,,,,msk,8-09-3148
+1,6,3150,4,,Led Spot,,53mm h†l,,,Vit,,,,msk,8-09-3150
+1,6,3151,4,,Led Spot,,53mm h†l,,,RF,,,,msk,8-09-3151
+1,6,3155,1,,Kabel med DC-koppling 2m,,,,,3155,,,,msk,8-09-3155
+1,6,3156,1,,F”rdelningskabel,6-v„gs splitter,,,,3156,,,,msk,8-09-3156
+2,4,3200,,,ljusramp,%1 lam. PP 1040 U b†da sidor smygas,%1 M(2)-50,170,19,%1,,,,msk,8-09-3200
+1,4,3201,,,ljusrampsbeslag,,,,,,,,,msk,8-09-3201
+1,4,3202,,,ljusrampsgavel,,,,,,,,,msk,8-09-3202
+1,4,3203,6,,Ljusrampsf„ste,,,,,3203,,,,msk,8-09-3203
+2,4,3210,,,ljusramp,%1 rostfritt smygbockas,%1 M(2)-50,170,19,%1 ,,,,msk,8-09-3210
+1,4,3220,,,ljusramp aluminium,vitlack,%1 M(2)-70,120,,,,,,msk,8-09-3220
+2,6,3400,,,undertak,%1 fumalam. K 1040 U b†da sidor+4 kanter,M(2)-200,%1 M(1)-200,19,%1,,,,msk,8-09-3400
+2,6,3401,2,,sargar,%1 fumalam. PP 1040 U+H$(11) geras,%1 M(2)-500,80,25,%1,,,,msk,8-09-3401
+2,6,3402,2,,sargar,%1 fumalam. PP 1040 U+H$(11) geras,%1 M(1)-500,80,25,%1,,,,msk,8-09-3402
+2,6,3403,2,,sargar,%1 fumalam. PP 1040 U+H$(11)      ,%1 M(2)-2,80,25,%1,,,,msk,8-09-3403
+2,6,3410,,,undertak,%1 fumalam. PP 1040 U b†da sidor+2 kanter,M(2)-200,%1 M(1)-2,19,%1,,,,msk,8-09-3410
+3,6,3440,,,ljustak,,M(2)-16,%1 M(1)-200,1.5,,,,,msk,8-09-3440
+1,6,3450,,,belysningsramp,,%1,,,enl. ,,,,msk,8-09-3450
+1,4,3203,,,ljusrampsh”rn ,,,,,,,,,msk,8-09-3203
+1,,3451,,,ljusramp m†lad,,%1,,,enl. ,,,,msk,8-09-3451
+1,7,3600,(M(2)-20)/601+1,,raster,silver,%1 (M(2)-20)/((M(2)-20)/601+1),%1 M(1)-10,,,,,,msk,8-09-3600
+1,6,3601,2,,vinkellister,%1 naturelox.,%1 M(2)   ,20,20,,,,,msk,8-09-3601
+1,6,3602,2,,vinkellister,%1 naturelox.,%1 M(1)-40,20,20,,,,,msk,8-09-3602
+1,6,3603,2,,vinkellister,%1 naturelox.,%1 M(2)   ,30,30,,,,,msk,8-09-3603
+1,6,3604,2,,vinkellister,%1 naturelox.,%1 M(1)-40,30,30,,,,,msk,8-09-3604
+1,6,3605,2,,vinkellister,%1 naturelox.,%1 M(2)   ,40,40,,,,,msk,8-09-3605
+1,6,3606,2,,vinkellister,%1 naturelox.,%1 M(1)-40,40,40,,,,,msk,8-09-3606
+1,6,3607,2,,T-list,%1 naturelox.,%1 M(1)- 4,20,20,,,,,msk,8-09-3607
+1,6,3608,2,,T-list,%1 naturelox.,%1 M(1)- 6,30,30,,,,,msk,8-09-3608
+1,6,3609,2,,T-list,%1 naturelox.,%1 M(1)- 6,40,40,,,,,msk,8-09-3609
+1,6,3610,(M(2)-20)/601+1,,raster,m„ssing,%1 (M(2)-20)/((M(2)-20)/601+1),%1 M(1)-10,,,,,,msk,8-09-3610
+1,6,3611,2,,vinkellister,%1 guldelox..,,,,,,,,msk,8-09-3611
+1,6,3612,2,,vinkellister,%1 guldelox..,,,,,,,,msk,8-09-3612
+1,6,3613,2,,T-list,%1 guldelox..,,,,,,,,msk,8-09-3613
+1,6,3615,,,vinkellister,NTD sidor,%1,15,10,,,,,msk,8-09-3615
+1,6,3616,,,plattlist,%1 naturelox.,,,,,,,,msk,8-09-3616
+1,6,3617,,,plattlist,%1 naturelox.,,,,,,,,msk,8-09-3617
+1,6,3618,,,plattlist,%1 naturelox.,,,,,,,,msk,8-09-3618
+1,6,3619,,,u-list NTD rygg,,M(1),,,,,,,msk,8-09-3619
+1,,3700,,,undertaksbeslag,,,,,,,,,msk,8-09-3700
+1,0,3801,,,n”dljuspaket B9s 12v ,,,,,,,,,msk,8-09-3801
+1,0,3803,,,burk,f„rg lika  S$(7),,,,,,,,msk,8-09-3803
+1,0,3804,,,Diod n”dbelysning 1 W,,,,,RF 3804,,,,msk,8-09-3804
+1,0,3805,,,Diod n”dbelysning 1 W,,,,,Vit 3805,,,,msk,8-09-3805
+1,0,3806,,,n”dljus DIOD,,,,,3806,,,,msk,8-09-3806
+1,0,3807,,,n”dbelysning,Stratos,,,,,,,,msk,8-09-3807
+1,0,3808,,,n”dbelysning,Mini 12V 5W h†l 33mm,,,,,,,,msk,8-09-3808
+1,5,3809,,,vibramatta,,150,100,,,,,,msk,8-09-3809
+1,0,3870,1,,F”rbindnigskabel,,600,,,3870,,,,msk,8-09-3870
+1,0,3885,1,,ecopac T5 1x14W,Dim INKL ljusk„lla,580,,,,,,,msk,8-09-3885
+1,0,3886,1,,ecopac T5 1x21W,Dim INKL ljusk„lla,880,,,,,,,msk,8-09-3886
+1,0,3887,1,,ecopac T5 1x28W,Dim INKL ljusk„lla,1180,,,,,,,msk,8-09-3887
+1,0,3888,1,,ecopac T5 1x35W,Dim INKL ljusk„lla,1480,,,,,,,msk,8-09-3888
+1,0,3880,2,,lysr”rsarmatur,Mini RHST-KDim 1x49,1471,,,,,,,msk,8-09-3880
+1,0,3881,2,,lysr”rsarmatur,Mini RHST-KDim 1x54,1171,,,,,,,msk,8-09-3881
+1,0,3882,2,,lysr”rsarmatur,Mini RHST-KDim 1x39,875,,,,,,,msk,8-09-3882
+1,0,3883,2,,lysr”rsarmatur,Mini RHST-KDim 1x24,571,,,,,,,msk,8-09-3883
+1,0,3900,1,,sensor,8-09-3900,,,,3900,,,,msk,8-09-3900
+2,7,4000,,,tr”skelskydd,lamell PP+H(11),M(13),296,18,,,,,msk,8-09-4000
+1,7,4005,,,tr”skelbeslag,combi,500,,,,,,,msk,8-09-4005
+1,7,4006,,,t-beslag,combi f”rl„ngt,500,,,,,,,msk,8-09-4006
+1,7,4007,,,tr”skelpl†t,,M(13),,,,,,,msk,8-09-4007
+1,7,4008,,,tr”skelpl†t,Zincor,,785,2,,,,,msk,8-09-4008
+2,7,4010,,,tr”skelskydd,lamell PP+H(11) smyg en kant,M(13),780,18,,,,,msk,8-09-4010
+1,7,4011,,,tr”skelskena,,M(13),,,4011,,,,msk,8-09-4011
+1,7,4012,,,tr”skelskena,m„ssingelox. ,M(13),,,4012,,,,msk,8-09-4012
+1,7,4013,,,tr”skelskena,,1000,,,4013,,,,msk,8-09-4013
+1,7,4014,,,tr”skelskena,m„ssingelox. ,M(13),,,4014,,,,msk,8-09-4014
+1,7,4015,,,tr”skelskena,,M(13)-20,,,4015,,,,msk,8-09-4015
+1,7,4017,,,tr”skelskena,m„ssingelox. ,M(13)-20,,,4017,,,,msk,8-09-4017
+1,7,4018,,,tr”skelskena,m„ssingelox. ,M(13)-20,,,4018,,,,msk,8-09-4018
+1,7,4019,,,tr”skelskena,,1000,,,4019,,,,msk,8-09-4019
+1,7,4020,,,tr”skelskena,,M(13)-20,,,4020,,,,msk,8-09-4020
+1,7,4021,,,mattskena,,M(22),,,4021,,,,msk,8-09-4021
+1,7,4022,,,mattskena,m„ssingelox.,M(22),,,4022,,,,msk,8-09-4022
+1,7,4200,,,takklaff,,M(13),M(15)+300-M(3),,,,,,msk,8-09-4200
+1,7,4201,,,brytbeslag,,,,,,,,,msk,8-09-4201
+1,7,4202,,,mikrobrytare,,,,,,,,,msk,8-09-4202
+2,7,4203,,,brytarkloss,,,,,,,,,msk,8-09-4203
+1,7,4204,,,kortslutningsstycke ,,,,,,,,,msk,8-09-4204
+1,7,4205,,,karmkontakt,,,,,,,,,msk,8-09-4205
+1,7,4207,,,mikrobrytare inkl. kabel,,,,,,,,,msk,8-09-4207
+1,7,4210,,,takklaff,,M(15)+300-M(3) ,,,,,,,msk,8-09-4210
+1,7,4220,1,,Takklaff  h=200,,M(13),,,,,,,msk,8-09-4220
+1,7,4230,1,,Takklaff  h=300,,M(13),,,,,,,msk,8-09-4230
+1,7,4300,,,ankarskena 48x26,,0.01,,,4300,,,,msk,8-09-4300
+1,7,4302,,,ankarbult,,30,M10,,,,,,msk,8-09-4302
+1,7,4330,,,vinkelj„rn 50x50x5,,%1,,,,,,,msk,8-09-4330
+1,7,4340,,,u-j„rn 340x50x20 (under golvp†lim),,,,,,,,,msk,8-09-4340
+1,7,4406,6,,plattj„rn ,,,,,enl. 13003,,,,msk,8-09-4406
+2,7,4410,,,S$(1)S$(20) stolpe S$(21) L,mdf S$(30) rostfri S$(34) S$(2) S$(31),%1,%1,%1,,,,,msk,8-09-4410
+2,7,4420,,,S$(1)S$(20) stolpe S$(21) L,lam S$(30) laminat S$(32) S$(34) S$(2) S$(31),%1,%1,%1,,,,,msk,8-09-4420
+1,7,4421,,,stolpbekl„dnad rostfri,enl.ritn,,,,,,,,msk,8-09-4421
+1,7,4422,,,stolp/framsid rostfri,enl.ritn,,,,,,,,msk,8-09-4422
+1,7,4423,,,tr”skelvinkel,,,,,4423,,,,msk,8-09-4423
+1,7,4424,,,hissvinkel standard,,,,,,,,,msk,8-09-4424
+1,7,4425,,,hissvinkel pl†tkorg ,,,,,,,,,msk,8-09-4425
+2,7,4430,,,S$(1)S$(20) stolpe S$(21),mdf S$(30) rostfri S$(34) S$(2) S$(31),%1,%1,%1,,,,,msk,8-09-4430
+1,7,4432,,,L-list,naturelox. alum.,1000,36,20,,,,,msk,8-09-4432
+2,7,4440,,,S$(1)10 stolpe upp,lam laminat S$(2) S$(36) S$(37) S$(38),M(13)-1,%1,%1,,,,,msk,8-09-4440
+2,7,4441,,,stolpp†lim,furu,M(15)-2,27,10,,,,,msk,8-09-4441
+2,7,4450,,,S$(1)10 stolpe upp L,mdf rostfri S$(2) S$(37) S$(38),M(13)-1,%1,%1,,,,,msk,8-09-4450
+2,7,4460,,,S$(1)10 stolpe upp,lam laminat S$(2) S$(36) S$(37) S$(38),M(13)-1,%1,%1,,,,,msk,8-09-4460
+2,7,4470,,,S$(1)10 stolpe upp L,mdf rostfri S$(2) S$(37) S$(38)       ,M(13)-1,%1,%1,,,,,msk,8-09-4470
+2,7,4480,,,stolpe,furu S$(30) S$(32) S$(34) S$(2) S$(31),%1,%1,%1,,,,,msk,8-09-4480
+2,7,4481,,,pilaster,,,,,,,,,msk,8-09-4481
+2,7,4482,,,pilaster  lager,,,50,50,,,,,msk,8-09-4482
+2,7,4485,,,stolpunderl„gg,furu,%1,%1,%1,,,,,msk,8-09-4485
+2,7,4490,,,S$(1)S$(20) stolpe,ply. S$(30) S$(31) S$(32),%1,%1,%1,,,,,msk,8-09-4490
+2,7,4500,,,S$(1)S$(20) stolpe L,mdf S$(30) S$(31) S$(32),%1,%1,%1,,,,,msk,8-09-4500
+2,7,4505,,,S$(1)S$(20) stolpe L,mdf S$(30) S$(31) S$(32),%1,%1,%1,,,,,msk,8-09-4505
+2,7,4510,,,S$(1)10 stolpe upp,ply S$(30) S$(31) S$(32),%1,%1,%1,,,,,msk,8-09-4510
+2,7,4520,,,S$(1)10 stolpe upp L,mdf S$(30) S$(31) S$(32),%1,%1,%1,,,,,msk,8-09-4520
+3,7,4530,,,ST A,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4530
+3,7,4531,,,ST B,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4531
+3,7,4532,,,ST C,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4532
+3,7,4533,,,ST D,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4533
+3,7,4534,,,ST E,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4534
+3,7,4535,,,ST F,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4535
+1,7,4536,2,,Nischsidor,enl.ritn,,,,,%1,%1,%1,msk,8-09-4536
+3,7,4540,,,SU A,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4540
+3,7,4541,,,SU B,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4541
+3,7,4542,,,SU C,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4542
+3,7,4543,,,SU D,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4543
+3,7,4544,,,SU E,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4544
+3,7,4545,,,SU F,enl.,%1,%1,0.8,RF,%1,%1,%1,msk,8-09-4545
+3,7,4546,,,FS/S Bred,,%1,%1,%1,,,,,msk,8-09-4546
+3,7,4547,,,FS/S Smal,,%1,%1,%1,,,,,msk,8-09-4547
+3,7,4548,,,FS/S Upp,,%1,%1,%1,,,,,msk,8-09-4548
+3,7,4549,,,PF4 Athena,,%1,%1,%1,,,,,msk,8-09-4549
+1,7,4550,,,l†sbaneskena,,600,,,,,,,msk,8-09-4550
+2,7,4551,,,furuunderl„gg,,600,28,28,,,,,msk,8-09-4551
+1,7,4552,,,ankarskena,,600,30,15,,,,,msk,8-09-4552
+1,7,4554,,,ankarsk.tak Kone N,,500,50,25,,,,,msk,8-09-4554
+1,7,4555,2,,ankarskena p† pl†t,,550,28,15,,,,,msk,8-09-4555
+1,7,4556,2,,takinf„stning b„rram,,,,,lev.l”sa 4556,,,,msk,8-09-4556
+1,7,4557,1,,sats spikpl†t,,,,,,,,,msk,8-09-4557
+1,7,4570,,,Takuppbygg,enl.ritn,%1,%1,%1,,,,,msk,8-09-4570
+1,7,4571,,,takuppbygg 200,,%1,%1,%1,,,,,msk,8-09-4571
+2,7,4600,,,golvp†lim,furu fals 18x25,M(13),%1,%1,,,,,msk,8-09-4600
+2,7,4610,,,golvp†lim,furu monteras med bult+j„rn,%1,%1,%1,,,,,msk,8-09-4610
+2,7,4620,,,golvp†lim,furu mont bult+j„rn borras 3x10 › framkant smygas,M(13),95,%1 66,,,,,msk,8-09-4620
+2,7,4625,,,golvp†lim,furu fals 20x20 mont bult+j„rn borras 5x8 ›,M(13),%1,%1 59,,,,,msk,8-09-4625
+2,7,4626,,,golvp†lim,mas. golvfals bortt. delvis i ”ppning,M(13),M(306),%1,,,,,msk,8-09-4626
+2,7,4630,,,golvp†lim,furu,%1,%1,%1,,,,,msk,8-09-4630
+2,7,4640,,,golvunderl„gg,furu,M(13),%1,%1,,,,,msk,8-09-4640
+2,7,4650,,,golvunderl„gg,furu,(M(1)+50),175,50,,,,,msk,8-09-4650
+1,7,4730,,,fransk skruv 8x40,,,,,,,,,msk,8-09-4730
+1,7,4750,,,M10 bult + mutter,bricka,175,,,,,,,msk,8-09-4750
+1,7,4760,,,M10 bult + mutter,bricka,150,,,,,,,msk,8-09-4760
+1,7,4770,,,M10 bult + mutter,bricka,%1,,,,,,,msk,8-09-4770
+2,7,4800,,,takuppbyggnad,mdf,%1,%1,%1,,,,,msk,8-09-4800
+2,7,4820,,,takf”rst„rkning,furu,%1,%1,%1,,,,,msk,8-09-4820
+2,7,4830,,,p†lim,lamell,%1,150,18,,,,,msk,8-09-4830
+1,7,4850,,,upph„ngningsbeslag,typ ADC,,,,,,,,msk,8-09-4850
+1,7,4851,,,upph„ngningsbeslag,typ ADV,,,,,,,,msk,8-09-4851
+2,7,4900,,,besamnedbygg.,lam. S$(7)+S$(7) not 1 kant,M(1)-2,182,25,,,,,msk,8-09-4900
+2,7,4910,,,besamnedbygg.,lam. S$(7)+H$(11) not 1 sida laminat 1 kant,M(1)-2,110,18,,,,,msk,8-09-4910
+2,7,4920,,,besamnedbygg.,lam. S$(7)+H$(11) laminat 1 kant,M(13),90,18,,,,,msk,8-09-4920
+2,7,4930,,,besamnedbygg.,lam. S$(7)+H$(11) not 1 sida laminat 2 kanter,M(1),%1,18,,,,,msk,8-09-4930
+2,7,4940,,,besamsk„rm,lam. S$(7)+H$(11) smyg+not 1 kant,M(13),200,13,,,,,msk,8-09-4940
+2,7,4950,,,besamsk„rm,lam. S$(7)+H$(11) smyg+not 1 kant,M(13),118,13,,,,,msk,8-09-4950
+2,7,4960,,,besamf”rst„rkn.,lam.borras och mont. enl. 302826,495,350,25,,,,,msk,8-09-4960
+2,7,4970,,,besamf”rst„rkn.,lam.borras och mont. enl. 302826,%1,%1,25,,,,,msk,8-09-4970
+2,6,5000,,,taklucka,OSB,500,350,25,,,,,msk,8-09-5000
+2,6,5010,,,taklucka,OSB,625,400,25,,,,,msk,8-09-5010
+2,6,5020,,,taklucka,sp†. H$(12)+H$(11),500,350,12,,,,,msk,8-09-5020
+2,6,5040,,,taklucka,OSB,500,300,25,,,,,msk,8-09-5040
+1,6,5060,,,takkonsol,,%1,%1,,,,,,msk,8-09-5060
+1,6,5180,,,fl„kt 220v Inkl galler,,,,,,,,,msk,8-09-5180
+1,6,5181,,,fl„ktgaller,vitlackerat,,,,,,,,msk,8-09-5181
+1,6,5182,,,trampskydd,fl„kt,,,,,,,,msk,8-09-5182
+1,6,5183,,,trampskydd,ventilation,,,,,,,,msk,8-09-5183
+1,6,5184,,,fl„kt 12v,,,,,,,,,msk,8-09-5184
+1,6,5185,,,trampskydd,H”vik Casa 13,,,,,,,,msk,8-09-5185
+1,6,5186,,,fl„kt 24v,,,,,,,,,msk,8-09-5186
+1,6,5187,,,fl„ktgaller,RF,,,,,,,,msk,8-09-5187
+2,6,4555,,,bomunderl„gg STD,lamell,500,200,25,,,,,msk,8-09-4555
+2,6,5201,,,bomunderl„gg,lam.,550,140,25,,,,,msk,8-09-5201
+2,6,5202,,,underl„gg,furu,400,60,40,,,,,msk,8-09-5202
+2,6,5250,,,underl„gg,%1,%1,%1,%1,,,,,msk,8-09-5250
+1,6,5270,,,takr„cke,,%1,,,,,,,msk,8-09-5270
+1,6,5271,,,sparklist,,%1,100,50,tj=2mm,,,,msk,8-09-5271
+2,6,5272,,,underl„gg takr„cke,OSB,,210,100,25,,,,msk,8-09-5272
+2,6,5280,1,,”verbyggnad,lam. sp. b.sid urtag  mont. 2xM5 skruv,M(2)-200,M(1)-190,19,,,,,msk,8-09-5280
+2,6,5281,2,,sargar,furu sp„rr b†da sidor, ,165,25,,,,,msk,8-09-5281
+2,6,5283,2,,trampskydd,lam. sp„rr b†da sidor,260,%1,19,,,,,msk,8-09-5283
+1,6,5300,,,ankarsk. tak,,%1,50,25,med vinklar ,,,,msk,8-09-5300
+1,6,5301,,,ankarsk. tak,,%1,38,17,,,,,msk,8-09-5301
+3,7,6000,1,,kjolskydd,enl ritn ,M(13),780,3,Zincor,M(13),,780,msk,8-09-6000
+3,7,6001,1,,tr.skydd,enl ritn ,300,225,3,Zincor,768,,300,msk,8-09-6001
+3,7,6002,1,,golvpl†t,enl ritn,M(1),M(2)+M(6),4,Alum,M(1),,M(2)+M(6),msk,8-09-6002
+3,7,6004,1,,n”dlucka,,342,518,3,zincor,342,,518,msk,8-09-6004
+3,4,6005,1,,D-tabl† ned,enl. ,260,%1,1.5,RF,294,,%1,msk,8-09-6005
+3,4,6006,1,,D-tabl† upp,enl. ,260,%1,1.5,RF,294,,%1,msk,8-09-6006
+3,4,6007,1,,panel smalhisspl†t,enl. SM97-009,,,,,,,,msk,8-09-6007
+3,4,6008,1,,lucka smalhisspl†t,enl. SM97-010,,,,,,,,msk,8-09-6008
+2,4,6009,1,,panelutfyllnad,,,,,ply. CNC-k”rs,,,,msk,8-09-6009
+2,4,6010,,,utfyllnad sektion,mdf limmas,%1,45,12,,,,,msk,8-09-6010
+1,4,6101,,,h”rnbekl„dnad,RF enl.skiss,,,,,,,,msk,8-09-6101
+1,4,6102,,,h”rbekl„dnad BAS,RF enl.skiss,,,,,,,,msk,8-09-6102
+1,4,6103,,,kassett,RF enl.skiss,,,,,,,,msk,8-09-6103
+1,6,7000,,,kl„mprofil,,,,,,,,,msk,8-09-7000
+1,6,7005,,,h”rnbeslag rygg,,,,,,,,,msk,8-09-7005
+1,6,7006,,,h”rnbeslag sida,,,,,,,,,msk,8-09-7006
+1,6,7011,,,RF lucka,,,,,,,,,msk,8-09-7011
+,,FRAMSIDA,1,,fr-sida,0,2265,54,,,,,,msk,FRAMSIDA
+,,IN,1,,Inredning,,1400,1100,,,,,,msk,IN
+,,V1,,,pl†tsektion,,,,,,,,,msk,V1
+,,LPS1-1,,,pl†tsektion lager,,,,,,,,,msk,LPS1-1
+,,LPS1-1,,,pl†tsektion lager,,,,,,,,,msk,LPS1-1
+,,LPS1-3,,,pl†tsektion lager,,,,,,,,,msk,LPS1-3
+,,LPS3-1,,,pl†tsektion lager,,,,,,,,,msk,LPS3-1
+,,PAN14IN,1,,14 mm panel inredning,0,1000,1000,,,,,,msk,PAN14IN
+,,PAN14PK,1,,14 mm panel,0,1000,1000,,,,,,msk,PAN14PK
+,,PAN14PS,1,,14 mm panel,0,1000,1000,,,,,,msk,PAN14PS
+,,PAN5IN,1,,5 mm panel inr,0,1000,1000,,,,,,msk,PAN5IN
+,,PAN5PK,1,,5 mm panel pl†tk,0,1000,1000,,,,,,msk,PAN5PK
+,,PAN5PS,1,,5 mm panel pl†tk,0,1000,1000,,,,,,msk,PAN5PS
+,,PF1,,,pl†tsektion framsida,,,,,,,,,msk,PF1
+,,PF4,,,pl†tsektion framsida,,,,,,,,,msk,PF4
+,,PF4/R,,,pl†tsektion framsida,,,,,,,,,msk,PF4/R
+,,PK,1,,pl†tkorg,,1400,1100,,,,,,msk,PK
+,,PS,1,,pl†tkorg smalhiss,,1000,1000,,,,,,msk,PS
+,,PS1-1,,,pl†tsektion,,,,,,,,,msk,PS1-1
+,,PS1-4,,,pl†tsektion,,,,,,,,,msk,PS1-4
+,,PS4-1,,,pl†tsektion,,,,,,,,,msk,PS4-1
+,,PS1-8,,,pl†tsektion,,,,,,,,,msk,PS1-8
+,,PS8-1,,,pl†tsektion,,,,,,,,,msk,PS8-1
+,,PS1-1K,,,pl†tsektion,,,,,,,,,msk,PS1-1K
+,,PS1K-1,,,pl†tsektion,,,,,,,,,msk,PS1K-1
+,,PS4B-1,,,pl†tsektion,,,,,,,,,msk,PS4B-1
+,,PS1-4B,,,pl†tsektion,,,,,,,,,msk,PS1-4B
+,,PS1-3,,,pl†tsektion,,,,,,,,,msk,PS1-3
+,,PS2-4,,,pl†tsektion,,,,,,,,,msk,PS2-4
+,,PS2-4/R,,,pl†tsektion,,,,,,,,,msk,PS2-4/R
+,,PS3-1,,,pl†tsektion,,,,,,,,,msk,PS3-1
+,,PS4-2,,,pl†tsektion,,,,,,,,,msk,PS4-2
+,,PS4-2/R,,,pl†tsektion,,,,,,,,,msk,PS4-2/R
+,,PS4-5,,,pl†tsektion,,,,,,,,,msk,PS4-5
+,,PS4-5/R,,,pl†tsektion,,,,,,,,,msk,PS4-5/R
+,,PS5-4,,,pl†tsektion,,,,,,,,,msk,PS5-4
+,,PS5-4/R,,,pl†tsektion,,,,,,,,,msk,PS5-4/R
+,,PS-SPEC,,,pl†tsektion special,enl. ritn:,,,,,,,,msk,PS-SPEC
+,,PT1-1,,,pl†tsektion tak,,,,,,,,,msk,PT1-1
+,,PT6-6,1,,pl†t tak,,1000,1000,,,,,,msk,PT6-6
+,,RYGG20,1,,rygg 20,0,1000,1000,,,,,,msk,RYGG20
+,,RYGG24,1,,rygg 24,0,1000,1000,,,,,,msk,RYGG24
+,,SH,1,,smalhiss,,1400,1100,,,,,,msk,SH
+,,SIDA20,1,,sida smalhiss,,2200,950,,,,,,msk,SIDA20
+,,SIDA24,1,,sida tr„korg,,2300,1050,,,,,,msk,SIDA24
+,,SPEC,1,,,,1000,1000,,,,,,msk,SPEC
+,,STEN,1,,stengolv,,1000,1000,,,,,,msk,STEN
+,,TAK14,1,,tak inredning,sp†. ,1000,1000,,,,,,msk,TAK14
+,,TAK22,1,,tak smalhiss,melamin,1000,1000,,,,,,msk,TAK22
+,,TAK25,1,,tak 25,OSB,1000,1000,,,,,,msk,TAK25
+,,TK,1,,tr„korg,,1400,1100,,,,,,msk,TK
+,,TRGOLV,1,,tr„golv,,1000,1000,,,,,,msk,TRGOLV
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,8-12-,,,,,,,,,,,,,
+1,6,3157,1,,Drivningssats,,,,,3157,,,,msk,8-12-3157

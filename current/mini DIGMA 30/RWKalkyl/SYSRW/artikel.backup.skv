@@ -1,0 +1,269 @@
+1;kod;art.nr;ant;enh;art.ben;anm 1 (material);L;B;T;anm 2;klippm. br1;klippm. br2;klippm. h”jd;Resurs;Fullst. Art. Nr.
+;;8-09-;;;;;;;;;;;;;
+1;1;1;;;;õ;;;;8-09-1;;;;msk;8-09-1
+2;1;2;;;;;;;;8-09-2;;;;msklag;8-09-2
+3;1;3;;;;;;;;8-09-3;;;;pl†t;8-09-3
+4;1;4;;;;;;;;8-09-4;;;;pl†tlag;8-09-4
+2;1;10;;;golvram tapp;furuõ;M(160);115;56;8-09-10;;;;msk;8-09-10
+2;1;20;;;golvram slits ;furuõ;M(165);115;56;8-09-20;;;;msk;8-09-20
+2;1;30;;;golvram mellan;furuõ;M(171);65;56;8-09-30;;;;msk;8-09-30
+2;1;40;;;golvskiva;lamellõ;M(1);M(2)+M(6);25;8-09-40;;;;msk;8-09-40
+2;1;43;;;golvskiva;gipsõ;M(1);M(2)+M(6);6;8-09-43;;;;msklag;8-09-43
+2;1;44;;;golvskiva;gipsõ;M(1);M(2)+M(6);13;8-09-44;;;;msklag;8-09-44
+2;1;50;;;golvskiva;HDFõ;M(1);M(2)+M(6);3.2;8-09-50;;;;msk;8-09-50
+2;1;55;;;golvskiva;oljeh„rd.masonitõ;M(1);M(2)+M(6);3.2;8-09-55;;;;msk;8-09-55
+2;1;60;;;golv-skydd ;mdfõ;M(1)-30;M(2)+M(6)-30;3.2;8-09-60;;;;msk;8-09-60
+2;1;61;;;golvskydd smalhiss;mdfõlev l”s;M(1)-30;M(2)+M(6)-30;3.2;8-09-61;;;;msk;8-09-61
+2;3;70;4;;kantlist;õ;%1;%1;%1;8-09-70;;;;msk;8-09-70
+2;3;90;;;h”rn;õ;;;;8-09-90;;;;msk;8-09-90
+2;3;120;;;framsida;OSBõ;;;25;8-09-120;;;;msk;8-09-120
+2;3;130;;;framsida upp;OSBõ;%1;%1;25;8-09-130;;;;msk;8-09-130
+;3;131;1;;framsida upp SH;melaminõ;%1;%1;22;8-09-131;;;;msk;8-09-131
+1;1;200;1;;L†g grop golv;;;;;8-09-200 enl.ritn;;;;msklag;8-09-200
+1;1;210;1;;Lite golv;;M(2)+M(14)+20;M(1)+40;80;8-09-210 enl.ritn;;;;msklag;8-09-210
+1;1;220;1;;Balkram;;M(2)+M(14)+20;M(1)+40;80;8-09-220 enl.ritn;;;;msklag;8-09-220
+1;1;221;1;;delad balkram;;M(2)+M(14)+20;M(1)+40;80;8-09-221 enl.ritn;;;;msklag;8-09-221
+1;1;288;4;;golvinf„st.;;;;;8-09-0288 GMV inkl. skruv;;;;msklag;8-09-288
+1;5;401;;;sockellist;;;;;8-09-401;;;;msklag;8-09-401
+1;4;411;;;k„derlist  ;;M(1)+M(2)+M(2)+M(1)-M(13)-M(27);;%1;8-09-411;;;;msklag;8-09-411
+1;4;431;1;;RF sockel;;%1;%1;;8-09-431 typ JM;;;;msklag;8-09-431
+1;4;610;;;Sockel;RF ;%1;%1;;8-09-610;;;;msklag;8-09-610
+1;4;620;;;Sockel;RF ;%1;100;;8-09-620;;;;msklag;8-09-620
+1;4;621;;;BEKL;RF;%1;;;8-09-621;;;;msklag;8-09-621
+1;4;810;;;handledare;RF;M(2)-200;;;8-09-810 32› ;;;;msklag;8-09-810
+1;4;811;;;h”rnb”j;RF;;;%1;8-09-811 32› ;;;;msklag;8-09-811
+1;4;812;;;h”rnb”j;RF;;;%1;8-09-812 32› ;;;;msklag;8-09-812
+1;4;813;2;;„ndb”j;RF;;;;8-09-813 32› ;;;;msklag;8-09-813
+1;4;814;;;„ndpropp;f”rnicklad;;;;8-09-814;;;;msklag;8-09-814
+1;4;815;2;;„ndpropp;svart;;;;8-09-815;;;;msklag;8-09-815
+1;4;816;2;;handledarh†llare;RF;;;;8-09-816 32›;;;;msklag;8-09-816
+1;4;818;;;handledarh†llare;Koppar;;;;8-09-818 32›;;;;msklag;8-09-818
+1;4;820;;;handledare;m„ssing;M(2)-200;;;8-09-820 32›;;;;msklag;8-09-820
+1;4;821;;;„ndb”j;m„ssing;;;;8-09-821 32›;;;;msklag;8-09-821
+1;4;822;;;h”rnb”j;m„ssing;;;;8-09-822 32›;;;;msklag;8-09-822
+1;4;940;;;handledare;bok;M(2)-200;;;8-09-940 38›;;;;msklag;8-09-940
+1;4;941;;;„ndb”j;bok;;;;8-09-941 38› ;;;;msklag;8-09-941
+1;4;942;;;h”rnb”j;bok;;;;8-09-942;;;;msklag;8-09-942
+1;4;943;;;Handledare;bok;M(2)-200;;;8-09-943 38›;;;;msklag;8-09-943
+1;4;944;;;Handledare;ek;M(2)-200;;;8-09-944 38›;;;;msklag;8-09-944
+1;4;945;;;Handledare;bj”rk;M(2)-200;;;8-09-945 38›;;;;msklag;8-09-945
+2;4;1000;;;handledare;bok;M(2)-200;95;20;8-09-1000;;;;msklag;8-09-1000
+1;4;1001;;;handledarbeslag;;;;;8-09-1001;;;;msklag;8-09-1001
+1;4;1002;;;handledarbeslag;RF;;;;8-09-1002;;;;msklag;8-09-1002
+2;4;1010;;;handledare;ek ;M(2)-200;95;20;8-09-1010;;;;msklag;8-09-1010
+1;4;1010;;;avb„rardistans;RF;1000;;;8-09-1010;;;;msklag;8-09-1010
+2;4;1020;;;handledare;bok RF;M(2)-200;100;20;8-09-1020;;;;msklag;8-09-1020
+2;4;1100;;;handledare;bok;M(2)-200;150;30;8-09-1100;;;;msklag;8-09-1100
+2;4;1110;;;handledare;ek;M(2)-200;150;30;8-09-1110;;;;msklag;8-09-1110
+2;4;1120;;;handledare;bok RF;M(2)-200;150;30;8-09-1120;;;;msklag;8-09-1120
+2;4;1160;;;handledare special;;;;;8-09-1160;;;;msklag;8-09-1160
+2;4;1200;;;avb„rare;%1 bok;M(2)-100;70;20;8-09-1200;;;;msklag;8-09-1200
+2;4;1201;;;avb„rare lasthiss;%1 bok obehandlad;M(2)-100;70;20;8-09-1201;;;;msklag;8-09-1201
+2;4;1204;;;avb„rare;%1 ek ;M(2)-100;70;20;8-09-1204;;;;msklag;8-09-1204
+2;4;1205;;;avb„rare;%1 bj”rk;M(2)-100;70;20;8-09-1205;;;;msklag;8-09-1205
+2;4;1206;;;avb„rare;%1 bok;M(2)-100;70;20;8-09-1206;;;;msklag;8-09-1206
+2;4;1207;;;avb„rare;%1 ek ;M(2)-100;70;20;8-09-1207;;;;msklag;8-09-1207
+2;4;1208;;;avb„rare;%1 bj”rk;M(2)-100;70;20;8-09-1208;;;;msklag;8-09-1208
+2;4;1210;;;avb„rare;%1 bok;M(1)-100;70;20;8-09-1210;;;;msklag;8-09-1210
+2;4;1220;;;avb„rare;%1 bok;%1 M(2)-20;%1;%1;8-09-1220;;;;msklag;8-09-1220
+2;4;1230;;;avb„rare;%1 bok;M(1);%1;%1;8-09-1230;;;;msklag;8-09-1230
+2;4;1240;;;avb„rarbekl„dnad;%1 MDF RF 0.8;M(2)-100;100;19;8-09-1240;;;;msklag;8-09-1240
+1;4;1241;;;avb„rare;RF;;60;20;8-09-1241;;;;pl†tlag;8-09-1241
+1;4;1242;;;avb„rare halvrund;RF ;;;;8-09-1242;;;;pl†tlag;8-09-1242
+1;4;1243;;;avb„rare halvrund;RF ;;;;8-09-1243;;;;pl†tlag;8-09-1243
+1;4;1244;;;avb„rare halvrund;RF ;;;;8-09-1244;;;;pl†tlag;8-09-1244
+1;4; ;;;avb„rare halvrund;RF ;;;;8-09- ;;;;pl†tlag;8-09- 
+1;4;1246;;;avb„rare halvrund;RF ;;;;8-09-1246 32mm+„ndpropp;;;;pl†tlag;8-09-1246
+1;4;1259;;;avb„rare halvrund;;;;;8-09-1259 R=16 mm;;;;msklag;8-09-1259
+1;4;1270;;;avb„rare plast;mdf ;M(2)-100;120;12;8-09-1270;;;;msklag;8-09-1270
+2;3;1310;;;tr„profillist;%1;;;;8-09-1310;;;;msklag;8-09-1310
+1;5;1444;1;;kabelkanal;;;;;8-09-1444 enl.ritn;;;;msklag;8-09-1444
+1;5;1445;1;;kabelkanal std;;;;;8-09-1445 tr„korg;;;;msklag;8-09-1445
+1;0;1491;1;;takluckel†s;;;;;8-09-1491 komplett;;;;msklag;8-09-1491
+1;4;1800;;;spegel;;450;600;6;8-09-1800;;;;msklag;8-09-1800
+1;4;1810;;;spegel;;%1 M(1);%1 1300;6;8-09-1810;;;;msklag;8-09-1810
+1;4;1801;;;spegelklammer;;;;;8-09-1801;;;;msklag;8-09-1801
+1;4;1803;;;spegellister;guld;%2 M(1) ;;;8-09-1803;;;;msklag;8-09-1803
+1;4;1805;1;;spegel;;270;650;6;8-09-1270 limmas;;;;msklag;8-09-1805
+1;4;1811;1;;spegel;;;;6;8-09-1811 Rund  700 ;;;;msklag;8-09-1811
+1;4;1806;;;spegellister;;%2 M(1) ;;;8-09-1806;;;;msklag;8-09-1806
+1;4;1807;;;spegellister;guld;%2 M(1) ;;;8-09-1807;;;;msklag;8-09-1807
+1;4;1808;;;spegel;;400;500;6;8-09-1808;;;;msklag;8-09-1808
+1;4;1809;;;spegel;;600;700;6;8-09-1809;;;;msklag;8-09-1809
+1;4;1810;;;spegel;;1050;950;6;8-09-1810;;;;msklag;8-09-1810
+1;4;1811;;;spegel;;950;1050;6;8-09-1811;;;;msklag;8-09-1811
+1;4;1820;;;spegel;rostfri;450;600;1;8-09-1820;;;;msklag;8-09-1820
+2;4;1821;;;spegel;%1;%1;%1;%1;8-09-1821;;;;msklag;8-09-1821
+1;4;1830;;;floatglas 3 mm;;%1;%1;3;8-09-1830;;;;msklag;8-09-1830
+1;4;1831;;;floatglas 4 mm;;%1;%1;4;8-09-1831;;;;msklag;8-09-1831
+1;4;1832;;;floatglas 5 mm;;%1;%1;5;8-09-1832;;;;msklag;8-09-1832
+1;4;1833;;;floatglas 6 mm;;%1;%1;6;8-09-1833;;;;msklag;8-09-1833
+1;4;1834;;;cellgummilist;;;;;8-09-1834;;;;msklag;8-09-1834
+1;4;1835;;;h„rdat floatglas;;%1;%1;4;8-09-1835;;;;msklag;8-09-1835
+1;4;1836;;;h„rdat floatglas;;%1;%1;5;8-09-1836;;;;msklag;8-09-1836
+1;4;1837;;;h„rdat floatglas;;%1;%1;6;8-09-1837;;;;msklag;8-09-1837
+1;4;1839;;;laminerat glas;;%1;%1;3:3;8-09-1839;;;;msklag;8-09-1839
+1;4;1840;;;laminerat glas;;%1;%1;4:4;8-09-1840;;;;msklag;8-09-1840
+1;4;1841;;;laminerat glas;;%1;%1;5:5;8-09-1841;;;;msklag;8-09-1841
+1;4;1842;;;laminerat glas;;%1;%1;6:6;8-09-1842;;;;msklag;8-09-1842
+1;4;1845;;;h„rdat lam;;%1;%1;4:4;8-09-1845;;;;msklag;8-09-1845
+1;4;1846;;;h„rdat lam;;%1;%1;5:5;8-09-1846;;;;msklag;8-09-1846
+1;4;1847;;;h„rdat lam;;%1;%1;6:6;8-09-1847;;;;msklag;8-09-1847
+1;4;1848;1;;glaslister;rostfri;%1;%1;;8-09-1848 inkl. skruvlister;;;;msklag;8-09-1848
+1;6;1850;;;opalglas;;%1;%1;2;8-09-1850;;;;msklag;8-09-1850
+1;6;1851;;;opalglas;;%1;%1;3;8-09-1851;;;;msklag;8-09-1851
+1;6;1852;;;opalglas;;%1;%1;5;8-09-1852;;;;msklag;8-09-1852
+1;6;1853;;;Duriflex opal;;%1;%1;"0,5";8-09-1853;;;;msklag;8-09-1853
+1;4;1950;;;v„gguttag;;;;;8-09-1950 inf„llt 220V;;;;msklag;8-09-1950
+1;4;2410;1;;F„llsits Jaxon Plattan;EK;;300;;8-09-2410;;;;msklag;8-09-2410
+1;4;2415;1;;F„llsits Jaxon Plattan;BOK;;300;;8-09-2415;;;;msklag;8-09-2415
+1;4;2416;1;;F„llsits Jaxon Plattan;BOK;;400;;8-09-2416;;;;msklag;8-09-2416
+1;4;2417;1;;F„llsits Jaxon Plattan;EK;;400;;8-09-2417;;;;msklag;8-09-2417
+1;4;2418;1;;F„llsits Jaxon Plattan;BJ™RK;;400;;8-09-2418;;;;msklag;8-09-2418
+1;4;2440;1;;F„llsits Jaxon Plattan;BJ™RK;;300;;8-09-2440;;;;msklag;8-09-2440
+1;4;2450;1;;F„llsits Jaxon Ruttan;BOK;;300;;8-09-2450;;;;msklag;8-09-2450
+1;4;2451;1;;F„llsits Jaxon Ruttan;EK;;300;;8-09-2451;;;;msklag;8-09-2451
+1;4;2452;1;;F„llsits Jaxon Ruttan;BJ™RK;;300;;8-09-2452;;;;msklag;8-09-2452
+1;4;2455;1;;F„llsits Jaxon Ruttan;BOK;;400;;8-09-2455;;;;msklag;8-09-2455
+1;4;2456;1;;F„llsits Jaxon Ruttan;EK;;400;;8-09-2456;;;;msklag;8-09-2456
+1;4;2457;1;;F„llsits Jaxon Ruttan;BJ™RK;;400;;8-09-2457;;;;msklag;8-09-2457
+1;4;2460;1;;F„llsits;plyw.PP;;;;8-09-2460;;;;msklag;8-09-2460
+1;4;2570;1;;F„llsits Lucus Plattan;BOK;;300;;8-09-2570;;;;msklag;8-09-2570
+1;4;2571;1;;F„llsits Lucus Ribban;BOK;;300;;8-09-2571;;;;msklag;8-09-2571
+1;4;2572;1;;F„llsits Lucus Rutan;BOK;;300;;8-09-2572;;;;msklag;8-09-2572
+1;4;2573;1;;F„llsits Lucus Plattan;EK;;300;;8-09-2573;;;;msklag;8-09-2573
+1;4;2574;1;;F„llsits Lucus Ribban;EK;;300;;8-09-2574;;;;msklag;8-09-2574
+1;4;2575;1;;F„llsits Lucus Rutan;EK;;300;;8-09-2575;;;;msklag;8-09-2575
+1;4;2576;1;;F„llsits Lucus Plattan;BJ™RK;;300;;8-09-2576;;;;msklag;8-09-2576
+1;4;2577;1;;F„llsits Lucus Ribban;BJ™RK;;300;;8-09-2577;;;;msklag;8-09-2577
+1;4;2578;1;;F„llsits Lucus Rutan;BJ™RK;;300;;8-09-2578;;;;msklag;8-09-2578
+1;4;2580;1;;F„llsits Lucus Plattan;BOK;;400;;8-09-2580;;;;msklag;8-09-2580
+1;4;2582;1;;F„llsits Lucus Rutan;BOK;;400;;8-09-2582;;;;msklag;8-09-2582
+1;4;2583;1;;F„llsits Lucus Plattan;EK;;400;;8-09-2583;;;;msklag;8-09-2583
+1;4;2585;1;;F„llsits Lucus Rutan;EK;;400;;8-09-2585;;;;msklag;8-09-2585
+1;4;2586;1;;F„llsits Lucus Plattan;BJ™RK;;400;;8-09-2586;;;;msklag;8-09-2586
+1;4;2588;1;;F„llsits Lucus Rutan;BJ™RK;;400;;8-09-2588;;;;msklag;8-09-2588
+1;4;2490;1;;f„llsits;%1;%1;;%1;8-09-2490;;;;msklag;8-09-2490
+1;4;2500;;;f”rst„rkning pl†t;0.01;0.01;;%1;"8-09-2500 1,0";;;;msklag;8-09-2500
+1;6;3004;;;armatur T5;nr: 8-09-3004 polykarbonat;;;;8-09-3004;;;;msklag;8-09-3004
+1;6;3005;;;armatur ;;;;;8-09-3005;;;;msklag;8-09-3005
+1;6;3006;;;armatur;;;;;8-09-3006;;;;msklag;8-09-3006
+1;6;3008;;;armatur T5;;2x14W;;;8-09-3008;;;;msklag;8-09-3008
+1;6;3009;;;armatur T5 reglerbar;;2x24W;;;8-09-3009;;;;msklag;8-09-3009
+1;6;3010;;;armatur;;;;;8-09-3010;;;;msklag;8-09-3010
+1;6;3011;;;gitto major 2x9 W;;;;;8-09-3011;;;;msklag;8-09-3011
+1;6;3013;;;T5 2x24 Sensor;;;;;8-09-3013;;;;msklag;8-09-3013
+1;6;3015;;;Giotto 235 vit ;;245;;;8-09-3015 inf„lld;;;;msklag;8-09-3015
+1;6;3016;;;Giotto 235 vit ;;;;;8-09-3016;;;;msklag;8-09-3016
+1;6;3020;;;armatur spec.;%1;;;;%1;;;;msklag;8-09-3020
+1;6;3026;;;armatur limburg 1707;;;;;8-09-3026;;;;msklag;8-09-3026
+1;6;3030;;;armatur;;;;;Theofils 20984.01 10W;;;;msklag;8-09-3030
+1;6;3031;;;frontring krom matt glas;;;;;8-09-3031;;;;msklag;8-09-3031
+1;6;3032;;;frontring guld matt glas;;;;;8-09-3032;;;;msklag;8-09-3032
+1;6;3033;;;f”rdelare;;;;;8-09-3033;;;;msklag;8-09-3033
+1;6;3034;;;trampskydd;;;;;8-09-3034;;;;msklag;8-09-3034
+1;6;3038;;;armatur;;;;;quasar krom;;;;msklag;8-09-3038
+1;6;3039;;;armatur;;;;;Laser;;;;msklag;8-09-3039
+1;6;3040;;;armatur;;;;;Pixell 100;;;;msklag;8-09-3040
+1;7;3045;;;trampskydd;;;;;8-09-3045;;;;msklag;8-09-3045
+1;6;3107;;;armatur T 5;;;;;8-09-3107 Cosmus;;;;msklag;8-09-3107
+1;6;3117;;;LED-Panel 11w vit;;167mm h†l;;;8-09-3117;;;;msklag;8-09-3117
+1;6;3135;1;;Drivningsats;;;;;8-09-3135;;;;msklag;8-09-3135
+1;6;3136;4;;trampskydd 8-09-3136;;;;;8-09-3136;;;;msklag;8-09-3136
+1;6;3148;1;;Hissarmatur LED;;;;;8-09-3148;;;;msklag;8-09-3148
+1;6;3150;4;;Led Spot;Vit;53mm h†l;;;8-09-3150;;;;msklag;8-09-3150
+1;6;3151;4;;Led Spot;RF;53mm h†l;;;8-09-3151;;;;msklag;8-09-3151
+1;6;3155;1;;Kabel med DC-koppling 2m;;;;;8-09-3155;;;;msklag;8-09-3155
+1;6;3156;1;;F”rdelningskabel;;;;;8-09-3156 6-v„gs splitter;;;;msklag;8-09-3156
+2;4;3200;;;ljusramp;%1 lam. PP 1040 U ;%1 M(2)-50;170;19;8-09-3200 b†da sidor smygas;;;;msklag;8-09-3200
+1;4;3201;;;ljusrampsbeslag;;;;;8-09-3201;;;;msklag;8-09-3201
+1;4;3202;;;ljusrampsgavel;;;;;8-09-3202;;;;msklag;8-09-3202
+1;4;3203;6;;Ljusrampsf„ste;;;;;8-09-3203;;;;msklag;8-09-3203
+2;4;3210;;;ljusramp;%1 rostfri;%1 M(2)-50;170;19;8-09-3210 smygbockas;;;;msklag;8-09-3210
+1;4;3220;;;ljusramp aluminium;vitlack;%1 M(2)-70;120;;8-09-3220;;;;msklag;8-09-3220
+3;6;3440;;;ljustak;;M(2)-16;%1 M(1)-200;1.5;8-09-3440;;;;msklag;8-09-3440
+1;6;3450;;;belysningsramp;;%1;;;8-09-3450 enl. ;;;;msklag;8-09-3450
+1;4;3203;;;ljusrampsh”rn ;;;;;8-09-3203;;;;msklag;8-09-3203
+1;;3451;;;ljusramp m†lad;;%1;;;8-09-3451 enl. ;;;;msklag;8-09-3451
+1;7;3600;(M(2)-20)/601+1;;raster;silver;%1 (M(2)-20)/((M(2)-20)/601+1);%1 M(1)-10;;8-09-3600;;;;msklag;8-09-3600
+1;6;3610;(M(2)-20)/601+1;;raster;m„ssing;%1 (M(2)-20)/((M(2)-20)/601+1);%1 M(1)-10;;8-09-3610;;;;msklag;8-09-3610
+1;0;3804;;;Diod n”dbelysning 1 W;RF;;;;8-09-3804;;;;msklag;8-09-3804
+1;0;3805;;;Diod n”dbelysning 1 W;Vit;;;;8-09-3805;;;;msklag;8-09-3805
+1;5;3809;;;vibramatta;;150;100;;8-09-3809;;;;msklag;8-09-3809
+1;0;3870;1;;F”rbindnigskabel;;600;;;8-09-3870;;;;msklag;8-09-3870
+1;0;3885;1;;ecopac T5 1x14W;;580;;;8-09-3885 Dim INKL ljusk„lla;;;;msklag;8-09-3885
+1;0;3886;1;;ecopac T5 1x21W;;880;;;8-09-3886 Dim INKL ljusk„lla;;;;msklag;8-09-3886
+1;0;3887;1;;ecopac T5 1x28W;;1180;;;8-09-3887 Dim INKL ljusk„lla;;;;msklag;8-09-3887
+1;0;3888;1;;ecopac T5 1x35W;;1480;;;8-09-3888 Dim INKL ljusk„lla;;;;msklag;8-09-3888
+1;7;4200;;;takklaff;;M(13);M(15)+300-M(3);;8-09-4200;;;;msklag;8-09-4200
+1;7;4210;;;takklaff;;M(15)+300-M(3) ;;;8-09-4210;;;;msklag;8-09-4210
+1;7;4220;1;;Takklaff  h=200;;M(13);;;8-09-4220;;;;msklag;8-09-4220
+1;7;4230;1;;Takklaff  h=300;;M(13);;;8-09-4230;;;;msklag;8-09-4230
+1;7;4300;;;ankarskena 48x26;;0.01;;;8-09-4300;;;;msklag;8-09-4300
+1;7;4302;;;ankarbult;;30;M10;;8-09-4302;;;;msklag;8-09-4302
+2;7;4410;;;S$(1)S$(20) stolpe S$(21) L;mdf S$(30) rostfri S$(34) S$(2) S$(31);%1;%1;%1;8-09-4410;;;;msklag;8-09-4410
+2;7;4420;;;S$(1)S$(20) stolpe S$(21) L;lam S$(30) laminat S$(32) S$(34) S$(2) S$(31);%1;%1;%1;8-09-4420;;;;msklag;8-09-4420
+1;7;4421;;;stolpbekl„dnad ;RF;;;;8-09-4421 enl.ritn;;;;pl†t;8-09-4421
+1;7;4422;;;stolp/framsid;RF;;;;8-09-4422 enl.ritn;;;;pl†t;8-09-4422
+1;7;4423;;;tr”skelvinkel;;;;;8-09-4423;;;;msklag;8-09-4423
+2;7;4430;;;S$(1)S$(20) stolpe S$(21);mdf S$(30) rostfri S$(34) S$(2) S$(31);%1;%1;%1;8-09-4430;;;;msklag;8-09-4430
+2;7;4440;;;S$(1)10 stolpe upp;lam laminat S$(2) S$(36) S$(37) S$(38);M(13)-1;%1;%1;8-09-4440;;;;msklag;8-09-4440
+2;7;4441;;;stolpp†lim;furu;M(15)-2;27;10;8-09-4441;;;;msklag;8-09-4441
+2;7;4450;;;S$(1)10 stolpe upp L;mdf rostfri S$(2) S$(37) S$(38);M(13)-1;%1;%1;8-09-4450;;;;msklag;8-09-4450
+2;7;4460;;;S$(1)10 stolpe upp;lam laminat S$(2) S$(36) S$(37) S$(38);M(13)-1;%1;%1;8-09-4460;;;;msklag;8-09-4460
+2;7;4470;;;S$(1)10 stolpe upp L;mdf rostfri S$(2) S$(37) S$(38)       ;M(13)-1;%1;%1;8-09-4470;;;;msklag;8-09-4470
+2;7;4480;;;stolpe;furu S$(30) S$(32) S$(34) S$(2) S$(31);%1;%1;%1;8-09-4480;;;;msklag;8-09-4480
+2;7;4481;;;pilaster;;;;;8-09-4481;;;;msklag;8-09-4481
+2;7;4482;;;pilaster  lager;;;50;50;8-09-4482;;;;msklag;8-09-4482
+2;7;4485;;;stolpunderl„gg;furu;%1;%1;%1;8-09-4485;;;;msklag;8-09-4485
+2;7;4490;;;S$(1)S$(20) stolpe;ply. S$(30) S$(31) S$(32);%1;%1;%1;8-09-4490;;;;msklag;8-09-4490
+2;7;4500;;;S$(1)S$(20) stolpe L;mdf S$(30) S$(31) S$(32);%1;%1;%1;8-09-4500;;;;msklag;8-09-4500
+2;7;4505;;;S$(1)S$(20) stolpe L;mdf S$(30) S$(31) S$(32);%1;%1;%1;8-09-4505;;;;msklag;8-09-4505
+2;7;4510;;;S$(1)10 stolpe upp;ply S$(30) S$(31) S$(32);%1;%1;%1;8-09-4510;;;;msklag;8-09-4510
+2;7;4520;;;S$(1)10 stolpe upp L;mdf S$(30) S$(31) S$(32);%1;%1;%1;8-09-4520;;;;msklag;8-09-4520
+1;7;4536;2;;Nischsidor;;;;;8-09-4536 enl. ritning;%1;%1;%1;pl†t;8-09-4536
+1;7;4550;;;l†sbaneskena;;600;;;8-09-4550;;;;pl†tlag;8-09-4550
+1;7;4552;;;ankarskena;;600;30;15;8-09-4552;;;;msklag;8-09-4552
+1;7;4555;2;;ankarskena p† pl†t;;550;28;15;8-09-4555;;;;msklag;8-09-4555
+1;7;4556;2;;takinf„stning b„rram;;;;;8-09-4556 lev. l”sa;;;;msklag;8-09-4556
+1;7;4557;1;;sats spikpl†t;;;;;8-09-4557;;;;msklag;8-09-4557
+1;7;4570;;;Takuppbygg;;%1;%1;%1;8-09-4570 enl.ritn;;;;msklag;8-09-4570
+1;7;4571;;;takuppbygg 200;;%1;%1;%1;8-09-4571;;;;msklag;8-09-4571
+2;7;4600;;;Korghals;furu falsõ18x25;M(13);%1;%1;8-09-4600;;;;msk;8-09-4600
+2;7;4610;;;Tr”skel;furuõmonteras med bult+j„rn;%1;%1;%1;8-09-4610;;;;msk;8-09-4610
+2;7;4800;;;takuppbyggnad;mdfõ;%1;%1;%1;8-09-4800;;;;pl†t;8-09-4800
+2;7;4820;;;takf”rst„rkning;furuõ;%1;%1;%1;8-09-4820;;;;msk;8-09-4820
+2;6;5020;;;taklucka;sp†. H$(12)+H$(11);500;350;12;8-09-5020;;;;msklag;8-09-5020
+1;6;5060;;;takkonsol;;%1;%1;;8-09-5060;;;;msklag;8-09-5060
+1;6;5180;;;fl„kt 220v Inkl galler;;;;;8-09-5180;;;;msklag;8-09-5180
+1;6;5181;;;fl„ktgaller;;;;;8-09-5181 vitlackerat;;;;msklag;8-09-5181
+1;6;5182;;;trampskydd;;;;;8-09-5182 fl„kt;;;;msklag;8-09-5182
+1;6;5183;;;trampskydd;;;;;8-09-5183 ventilation;;;;msklag;8-09-5183
+1;6;5184;;;fl„kt 12v;;;;;8-09-5184;;;;msklag;8-09-5184
+1;6;5185;;;trampskydd;H”vik Casa 13;;;;8-09-5185;;;;msklag;8-09-5185
+1;6;5186;;;fl„kt 24v;;;;;8-09-5186;;;;msklag;8-09-5186
+1;6;5187;;;fl„ktgaller;RF;;;;8-09-5187;;;;msklag;8-09-5187
+2;6;4555;;;bomunderl„gg STD;lamellõ;500;200;25;8-09-4555;;;;msk;8-09-4555
+2;6;5201;;;bomunderl„gg;lam.õ;550;140;25;8-09-5201;;;;msk;8-09-5201
+1;6;5270;;;takr„cke;;%1;;;8-09-5270;;;;msklag;8-09-5270
+1;6;5271;;;sparklist;õ;%1;100;50;8-09-5271 tj=2mm;;;;msk;8-09-5271
+2;6;5281;2;;sargar;furuõsp„rr b†da sidor; ;165;25;8-09-5281;;;;msk;8-09-5281
+1;6;7000;;;kl„mprofil;õ;;;;8-09-7000 lev. l”sa;;;;msk;8-09-7000
+1;6;7005;;;h”rnbeslag rygg;õ;;;;8-09-7005;;;;msk;8-09-7005
+1;6;7006;;;h”rnbeslag sida;õ;;;;8-09-7006;;;;msk;8-09-7006
+;;FRAMSIDA;1;;fr-sida;õ;2265;54;;;;;;msk;FRAMSIDA
+;;RYGG20;1;;rygg 20;õ;1000;1000;;;;;;msk;RYGG20
+;;RYGG24;1;;rygg 24;õ;1000;1000;;;;;;msk;RYGG24
+;;SH;1;;smalhiss;õ;1400;1100;;;;;;msk;SH
+;;SIDA20;1;;sida smalhiss;õ;2200;950;;;;;;msk;SIDA20
+;;SIDA24;1;;sida tr„korg;õ;2300;1050;;;;;;msk;SIDA24
+;;SPEC;1;;;õ;1000;1000;;;;;;msk;SPEC
+;;STEN;1;;stengolv;õ;1000;1000;;;;;;msk;STEN
+;;TAK22;1;;tak smalhiss;melaminõ;1000;1000;;;;;;msk;TAK22
+;;TAK25;1;;tak 25;OSBõ;1000;1000;;;;;;msk;TAK25
+;;TK;1;;tr„korg;õ;1400;1100;;;;;;msk;TK
+;;TRGOLV;1;;tr„golv;õ;1000;1000;;;;;;msk;TRGOLV
+
+
+;;8-12-;;;;;;;;;;;;;
+1;6;3157;1;;Drivningssats;;;;;8-12-3157;;;;msklag;8-12-3157
