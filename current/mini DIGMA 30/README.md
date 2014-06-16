@@ -6,3 +6,11 @@
 #### Files
 * Ending with '*_empty.xlsm', current release with the templates cleaned up.
 * Ending with '*_release.xlsm', same as above, can be uncleaned in some cases.
+
+## History
+### v1.3-RC1
+#### Bugfixes
+ * Description (Anmärkning) doesn't show the whole text
+ * Order nr is missing for 62157
+ * "Ant" doesn't show larger numbers than 9
+ * "SPECIAL" is over the header information
