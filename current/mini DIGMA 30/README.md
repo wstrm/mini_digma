@@ -8,6 +8,9 @@
 * Ending with '*_release.xlsm', same as above, can be uncleaned in some cases.
 
 ## History
+### v1.3-RC2
+#### Bugfixes
+ * Fixes line breaking/wraping
 ### v1.3-RC1
 #### Bugfixes
  * Description (Anmärkning) doesn't show the whole text
